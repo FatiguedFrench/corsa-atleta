@@ -5,6 +5,7 @@ public class Gara {
 		new Atleta(67, "Aureliano");
 		new Atleta(68, "Filippo");
 		new Atleta(69, "Cutini");
+		new Atleta(1, "Chadi");
 
 		Giudice.avviaGara();
 		// System.out.println("Caratteristiche Main: "+ Thread.currentThread().getName()

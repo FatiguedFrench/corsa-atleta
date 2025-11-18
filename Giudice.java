@@ -1,22 +1,42 @@
-import com.sun.tools.jconsole.JConsoleContext;
-
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Giudice extends Thread {
-	static int numero;
+//	static int numero;
 	static ArrayList<Atleta> Atleti = new ArrayList<>();
+	static ArrayList<Double> Progresso = new ArrayList<Double>();
+	static int Turni = 0;
 	static ArrayList<Atleta> Podio = new ArrayList<>();
+	static final double LUNGHEZZAGARA = 50.0;
 //	static ArrayList<Thread> threadAtleti = new ArrayList<>();
 
 	private Giudice() { }
 
-	public static void aggiungimi(Atleta a) {
-		Atleti.add(a);
+	public static boolean passi(Atleta a, double numMetri) {
+		int index = Atleti.indexOf(a);
+		Object lock = new Object();
+
+		Progresso.set(index, Progresso.get(index)  + numMetri);
+		System.out.printf("[%s] Metri Percorsi: %f\n", a.nome, Progresso.get(index));
+		Giudice.passoFatto();
+
+		if (Progresso.get(index) >= LUNGHEZZAGARA) {
+			synchronized (lock) { Podio.add(a); }
+			if (Podio.size() == Atleti.size()) Giudice.fineGara();
+			return false;
+		} else { return true; }
 	}
 
-	public static void finito(Atleta a) {
-		Podio.add(a);
-		if (Podio.size() == Atleti.size()) Giudice.fineGara();
+	public static synchronized void passoFatto() {
+		if (++Turni == (Atleti.size() - Podio.size())) {
+			System.out.println("--- --- --- --- ---");
+			Turni = 0;
+		}
+	}
+
+	public static synchronized void aggiungimi(Atleta a) {
+		Atleti.add(a);
+		Progresso.add(0.0);
 	}
 
 	public static void fineGara() {
