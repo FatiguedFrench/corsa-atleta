@@ -1,12 +1,10 @@
-import java.io.*;
-
 /**
  * Avvia una gara atletica creando un insieme di atleti e un giudice
  * che ne gestisce lo svolgimento. La classe contiene esclusivamente
  * il metodo {@code main}, punto di ingresso dell’applicazione.
  *
  * @author PixPix
- * @version 3.1
+ * @version 4.0
  */
 public class Gara {
 	/**

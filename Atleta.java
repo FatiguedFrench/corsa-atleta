@@ -1,65 +1,96 @@
 import java.util.Random;
 
 /**
- * Rappresenta un atleta che partecipa a una gara e avanza a intervalli regolari.
- * Implementa {@link Runnable} per consentire l’esecuzione concorrente.
+ * Rappresenta un atleta che partecipa allauna gara.
+ * Implementa {@link Runnable} per permettere l'esecuzione di ciascun {@link Atleta} in thread separati
  */
 public class Atleta implements Runnable {
-	/** Indica la priorita' del Thread dell'Atleta */
-	int livelloDoping;
-	/** Numero identificativo dell’atleta. */
-	int numero;
-	/** Nome dell’atleta. */
+	/** Priorità del thread */
+	int efficienzaAgonistica;
+	/** Progresso dell'atleta in metri */
+	double progresso;
+	/** Tempo trascorso dall'inizio della gara */
+	double tempo;
+	/** Nome dell'atleta */
 	String nome;
-	/** Tempo impiegato dall’atleta, incrementato a ogni passo. */
-	double tempo = 0;
-	/** Riferimento al giudice che supervisiona la gara. */
+	/** ID del thread */
+	int numero;
+	/** Riferimento al Giudice che monitora la gara */
 	Giudice g;
-	/** Generatore Casuale di Numeri */
+	/** Generatore di numeri casuali, utilizzato per determinare la priorita' e i progressi */
 	private Random rand;
 
 	/**
-	 * Costruisce un nuovo atleta e lo registra presso il giudice.
+	 * Costruisce un nuovo atleta e lo registra presso il Giudice.
+	 * La priorita' del futuro Thread viene assegnata casualmente tra MIN_PRIORITY e MAX_PRIORITY.
 	 *
-	 * @param pNome nome dell’atleta
-	 * @param pG istanza del giudice che gestisce la gara
+	 * @param pNome Il nome dell'atleta.
+	 * @param pG	Il Giudice che gestisce la gara.
 	 */
 	public Atleta(String pNome, Giudice pG) {
 		rand = new Random();
+		progresso = 0.0;
 		nome = pNome;
+		tempo = 0.0;
 		g = pG;
+
 		g.aggiungimi(this);
 
-		livelloDoping = rand.nextInt(10) + 1;
-		if (livelloDoping > Thread.NORM_PRIORITY) { System.out.print("L'Atleta " + pNome + " si e' dopato! ");
-		} else if ( livelloDoping < Thread.NORM_PRIORITY) { System.out.print("L'Atleta " + pNome + " e' fuori forma! "); }
-		else { System.out.print("L'Atleta " + pNome + " e' pronto! "); }
+		efficienzaAgonistica = rand.nextInt(Thread.MAX_PRIORITY) + Thread.MIN_PRIORITY;
+		if (efficienzaAgonistica > Thread.NORM_PRIORITY) { 
+			System.out.print("L'Atleta " + pNome + " si e' dopato!"); 
+		}
+		else if ( efficienzaAgonistica < Thread.NORM_PRIORITY) { 
+			System.out.print("L'Atleta " + pNome + " e' fuori forma!"); 
+		}
+		else { 
+			System.out.print("L'Atleta " + pNome + " e' pronto!"); 
+		}
 
-		System.out.print("Efficienza Agonistica: " + livelloDoping);
-		System.out.println("/10");
+		System.out.printf(" Efficienza Agonistica: %d/%d\n", efficienzaAgonistica, Thread.MAX_PRIORITY);
 	}
 
 	/**
-	 * Genera l’avanzamento dell’atleta in metri e incrementa il tempo impiegato.
-	 *
-	 * @return il numero di metri percorsi nel passo corrente
+	 * Simula il movimento dell'atleta durante la gara.
+	 * Incrementa il progresso in maniera casuale e aggiorna il tempo trascorso
 	 */
-	double cammina() {
-		tempo++;
+	void cammina() {
 		Random generatore = new Random();
-		return generatore.nextDouble(10 + livelloDoping * 2);
+		progresso += generatore.nextDouble(10 + efficienzaAgonistica * 2);
+		tempo++;
 	}
 
 	/**
-	 * Ciclo principale di esecuzione dell’atleta. Continua ad avanzare finché il
-	 * giudice lo consente, effettuando una pausa di un secondo tra un passo e l’altro.
+	 * Visualizza lo stato corrente dell'atleta in gara.
+	 * Mostra una barra di progresso proporzionale alla distanza percorsa
+	 */
+	void visualizzaProgresso() {
+		int numeroCaratteriRappresentativi = 30;
+		double rapportoProgresso = Math.min((progresso / g.getLunghezzaGara() * numeroCaratteriRappresentativi), numeroCaratteriRappresentativi);
+		String spaziatura = " ".repeat(g.getLunghezzaNomePiuLungo() - nome.length());
+		String strProgresso = "=".repeat((int)(rapportoProgresso));
+		String strRimasto = " ".repeat((int)(numeroCaratteriRappresentativi - rapportoProgresso));
+
+		if (progresso >= g.getLunghezzaGara()) {
+			System.out.printf("FINITO [%d] %s%s [%s%s]\n", numero, nome, spaziatura, strProgresso, strRimasto);
+		} else { 
+			System.out.printf("	   [%d] %s%s [%s%s ]\n", numero, nome, spaziatura, strProgresso, strRimasto); 
+		}
+	}
+
+	/**
+	 * Funzione principale del thread dell'atleta.
+	 * Imposta la priorità del thread, una volta eseguito, l'atleta cammina finché non raggiunge il podio della gara.
+	 * La progressione avviene con pause di 1 secondo per simulare il tempo reale
 	 */
 	@Override
 	public void run() {
-		Thread.currentThread().setPriority(livelloDoping);
-		numero = (int) Thread.currentThread().getId();
+		Thread.currentThread().setPriority(efficienzaAgonistica);
+		numero = (int) Thread.currentThread().threadId();
 
-		while (g.passi(this, cammina())) {
+		while (!g.sonoNelPodio(this)) {
+			cammina();
+
 			try { Thread.currentThread().sleep(1000); }
 			catch (InterruptedException e) { System.err.println("Errore sleep"); }
 		}
