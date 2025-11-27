@@ -30,11 +30,13 @@ public class Atleta implements Runnable {
 		g = pG;
 		g.aggiungimi(this);
 
-		livelloDoping = rand.nextInt(20);
-		if (livelloDoping > 15) {
-			livelloDoping = (livelloDoping - 10);
-			System.out.println("L'Atleta " + pNome + " si e' dopato! Livello di Doping: " + livelloDoping);
-		} else { livelloDoping = Thread.NORM_PRIORITY; }
+		livelloDoping = rand.nextInt(10) + 1;
+		if (livelloDoping > Thread.NORM_PRIORITY) { System.out.print("L'Atleta " + pNome + " si e' dopato! ");
+		} else if ( livelloDoping < Thread.NORM_PRIORITY) { System.out.print("L'Atleta " + pNome + " e' fuori forma! "); }
+		else { System.out.print("L'Atleta " + pNome + " e' pronto! "); }
+
+		System.out.print("Efficienza Agonistica: " + livelloDoping);
+		System.out.println("/10");
 	}
 
 	/**
@@ -54,8 +56,8 @@ public class Atleta implements Runnable {
 	 */
 	@Override
 	public void run() {
-		numero = (int) Thread.currentThread().getId();
 		Thread.currentThread().setPriority(livelloDoping);
+		numero = (int) Thread.currentThread().getId();
 
 		while (g.passi(this, cammina())) {
 			try { Thread.currentThread().sleep(1000); }
