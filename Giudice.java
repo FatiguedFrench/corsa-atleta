@@ -29,6 +29,12 @@ public class Giudice extends Thread {
 	GestioneFile filer =  new GestioneFile();
 
 	/**
+	 * Riferimento alla classe per
+	 * le anomalie agli atleti
+	 */
+	EventiCausali ec;
+
+	/**
 	 * Lunghezza (in caratteri) del nome più lungo tra gli atleti registrati.
 	 * Utilizzato per allineare la stampa della classifica
 	 */
@@ -40,18 +46,18 @@ public class Giudice extends Thread {
 	 * thread segnalano il completamento simultaneamente
 	 */
 	private final Object lock = new Object();
-	
+
 	/**
 	 * Lunghezza totale della gara in metri.
 	 * Valore costante che indica la distanza che un atleta deve
 	 * percorrere per essere considerato "arrivato" e andare nel {@link #Podio}
 	 */
-	final double LUNGHEZZAGARA = 50.0;
+	final double LUNGHEZZAGARA = 100.0;
 
 	/**
 	 * Costruttore di {@link Giudice}
 	 */
-	public Giudice() { }
+	public Giudice(EventiCausali e) { ec = e; }
 
 	/**
 	 * Getter per la lunghezza della gara (in metri).
@@ -66,7 +72,7 @@ public class Giudice extends Thread {
 	 * @return numero di caratteri del nome più lungo tra gli atleti
 	 */
 	public int getLunghezzaNomePiuLungo() { return lunghezzaNomePiuLungo; }
-	
+
 	/**
 	 * Verifica se un dato atleta è presente nel podio.
 	 *
@@ -74,7 +80,7 @@ public class Giudice extends Thread {
 	 * @return {@code true} se l'atleta è presente in {@link #Podio}, {@code false} altrimenti
 	 */
 	public boolean sonoNelPodio(Atleta a) {
-		return (Podio.indexOf(a) > 0) ? true : false;
+		return (Podio.indexOf(a) > -1) ? true : false;
 	}
 
 	/**
@@ -84,7 +90,7 @@ public class Giudice extends Thread {
 	 * al {@link #Podio} in modo sincronizzato.
 	 * Quando tutti gli atleti sono presenti nel podio invoca {@link #fineGara()}
 	 * e termina la sua esecuzione. Questo metodo è progettato come metodo ricorsivo
-	 * che effettua una pausa di 750ms tra una iterazione e la successiva
+	 * che effettua una pausa di 1s tra esecuzioni
 	 */
 	public void monitora() {
 		for (Atleta a : Atleti) {
@@ -92,28 +98,14 @@ public class Giudice extends Thread {
 
 			if (!Podio.contains(a) && (a.progresso >= LUNGHEZZAGARA)) {
 				synchronized (lock) { Podio.add(a); }
-				if (Podio.containsAll(Atleti)) { fineGara(); return ; }
+				if (Podio.containsAll(Atleti)) { fineGara(); return; }
 			}
 		}
 
-		System.out.println("------------------------------------------------------------");
-		try { Thread.sleep(750); }
+		System.out.printf("%s\n", "-".repeat(Atleta.numeroCaratteriRappresentativi + lunghezzaNomePiuLungo + 5 + 7 + Atleti.size() % 10));
+		try { Thread.sleep(1000); }
 		catch (InterruptedException e) { System.err.println("Errore sleep"); }
 		monitora();
-	}
-
-	/**
-	 * Aggiunge un atleta alla lista dei partecipanti.
-	 * Metodo sincronizzato per garantire coerenza se più thread tentano di
-	 * registrare atleti contemporaneamente. Aggiorna inoltre
-	 * {@link #lunghezzaNomePiuLungo}
-	 *
-	 * @param a atleta da aggiungere
-	 */
-	public synchronized void aggiungimi(Atleta a) {
-		Atleti.add(a);
-
-		if (a.nome.length() > lunghezzaNomePiuLungo) { lunghezzaNomePiuLungo = a.nome.length(); }
 	}
 
 	/**
@@ -123,7 +115,6 @@ public class Giudice extends Thread {
 	 * {@link GestioneFile#scriviPodio(ArrayList)} la scrittura su un file
 	 */
 	synchronized public void fineGara() {
-		Podio = Atleti;
 		int i = 0;
 
 		System.out.println("Classifica (dal Primo all'Ultimo): ");
@@ -133,6 +124,7 @@ public class Giudice extends Thread {
 		}
 
 		filer.scriviPodio(Podio);
+		return;
 	}
 
 	/**
@@ -142,17 +134,20 @@ public class Giudice extends Thread {
 	 * invoca {@link #monitora()} per iniziare il monitoraggio dei progressi.
 	 */
 	public void avviaGara() {
-		filer.registraAtleti("atleti.txt", this);
+		Atleti = filer.registraAtleti("atleti.txt", this, ec);
 
 		System.out.print("Inizio in ");
-		for (int i = 1; i > 0; i--) {
+		for (int i = 5; i > 0; i--) {
 			System.out.printf("%d ", i);
 			try { Thread.sleep(1000); }
 			catch (InterruptedException e) { System.err.println("Errore sleep"); }
 		}
 		System.out.println("VIA!!!");
 
-		for (Atleta a : Atleti) { (new Thread(a)).start(); }
+		for (Atleta a : Atleti) {
+			if (a.nome.length() > lunghezzaNomePiuLungo) { lunghezzaNomePiuLungo = a.nome.length(); }
+			(new Thread(a)).start();
+		}
 		
 		monitora();
 	}

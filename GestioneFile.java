@@ -10,42 +10,43 @@ import java.util.ArrayList;
  * Si occupa della lettura dei nomi degli atleti e della scrittura del podio su un file
  */
 public class GestioneFile {
-    /**
-     * Costruttore della classe GestioneFile.
-     */
-    public void GestoneFile() {}
+	/**
+	 * Costruttore della classe GestioneFile.
+	 */
+	public void GestoneFile() {}
 
-    /**
-     * Legge i nomi degli atleti da un file di testo e crea gli oggetti Atleta registrandoli con il Giudice
-     *
-     * @param fileAtleti Percorso del file contenente i nomi degli atleti.
-     * @param g          Riferimento al Giudice della gara.
-     */
-    public void registraAtleti(String fileAtleti, Giudice g) {
-        try (BufferedReader file = new BufferedReader(new FileReader(fileAtleti))) {
-            String nomeAtleta;
-            while ((nomeAtleta = file.readLine()) != null) { 
-                new Atleta(nomeAtleta, g); 
-            }
-        } catch (IOException e) { 
-            System.out.println("Errore nella lettura del file: " + e.getMessage()); 
-        }
-    }
+	/**
+	 * Legge i nomi degli atleti da un file di testo e crea gli oggetti Atleta registrandoli con il Giudice
+	 *
+	 * @param fileAtleti Percorso del file contenente i nomi degli atleti.
+	 * @param g		Riferimento al Giudice della gara.
+	 */
+	public ArrayList<Atleta> registraAtleti(String fileAtleti, Giudice g, EventiCausali ec) {
+		ArrayList<Atleta> returnObj = new ArrayList<>();
+	try (BufferedReader file = new BufferedReader(new FileReader(fileAtleti))) {
+			String nomeAtleta;
+			while ((nomeAtleta = file.readLine()) != null) {
+				returnObj.add(new Atleta(nomeAtleta, g, ec));
+			}
+		} catch (IOException e) {
+			System.out.println("Errore nella lettura del file: " + e.getMessage()); 
+		}
+	
+	return returnObj;
+	}
 
-    /**
-     * Scrive sul file "podio.txt" la classifica finale degli atleti.
-     * Ogni atleta viene elencato con il suo numero, nome ed priorita' del Thread mentre era in esecuzione
-     *
-     * @param podio Lista di atleti ordinata secondo la classifica della gara.
-     */
-    public void scriviPodio(ArrayList<Atleta> podio) {
-        int i = 0;
-        try (PrintWriter writer = new PrintWriter(new FileWriter("podio.txt"))) {
-            for (Atleta a : podio) { 
-                writer.printf("%d. [%d] %s | Priorita' Thread: %d/%d\n", ++i, a.numero, a.nome, a.efficienzaAgonistica, Thread.MAX_PRIORITY); 
-            }
-        } catch (IOException e) { 
-            System.out.print("Errore Scrittura File"); 
-        }
-    }
+	/**
+	 * Scrive sul file "podio.txt" la classifica finale degli atleti.
+	 * Ogni atleta viene elencato con il suo numero, nome ed priorita' del Thread mentre era in esecuzione
+	 *
+	 * @param podio Lista di atleti ordinata secondo la classifica della gara.
+	 */
+	public void scriviPodio(ArrayList<Atleta> podio) {
+		int i = 0;
+		try (PrintWriter writer = new PrintWriter(new FileWriter("podio.txt"))) {
+			for (Atleta a : podio) {
+				writer.printf("%d. [%d] %s | Priorita' Thread: %d/%d\n", ++i, a.numero, a.nome, a.efficienzaAgonistica, Thread.MAX_PRIORITY);
+			}
+		} catch (IOException e) { System.out.print("Errore Scrittura File"); }
+	}
 }

@@ -11,6 +11,8 @@ public class Atleta implements Runnable {
 	double progresso;
 	/** Tempo trascorso dall'inizio della gara */
 	double tempo;
+	/** */
+	EventiCausali ec;
 	/** Nome dell'atleta */
 	String nome;
 	/** ID del thread */
@@ -19,6 +21,8 @@ public class Atleta implements Runnable {
 	Giudice g;
 	/** Generatore di numeri casuali, utilizzato per determinare la priorita' e i progressi */
 	private Random rand;
+	/** Stile */
+	static final int numeroCaratteriRappresentativi = 50;
 
 	/**
 	 * Costruisce un nuovo atleta e lo registra presso il Giudice.
@@ -27,25 +31,18 @@ public class Atleta implements Runnable {
 	 * @param pNome Il nome dell'atleta.
 	 * @param pG	Il Giudice che gestisce la gara.
 	 */
-	public Atleta(String pNome, Giudice pG) {
+	public Atleta(String pNome, Giudice pG, EventiCausali e) {
 		rand = new Random();
 		progresso = 0.0;
 		nome = pNome;
 		tempo = 0.0;
+		ec = e;
 		g = pG;
 
-		g.aggiungimi(this);
-
 		efficienzaAgonistica = rand.nextInt(Thread.MAX_PRIORITY) + Thread.MIN_PRIORITY;
-		if (efficienzaAgonistica > Thread.NORM_PRIORITY) { 
-			System.out.print("L'Atleta " + pNome + " si e' dopato!"); 
-		}
-		else if ( efficienzaAgonistica < Thread.NORM_PRIORITY) { 
-			System.out.print("L'Atleta " + pNome + " e' fuori forma!"); 
-		}
-		else { 
-			System.out.print("L'Atleta " + pNome + " e' pronto!"); 
-		}
+		if (efficienzaAgonistica > Thread.NORM_PRIORITY) { System.out.print("L'Atleta " + pNome + " si e' dopato!"); }
+		else if ( efficienzaAgonistica < Thread.NORM_PRIORITY) { System.out.print("L'Atleta " + pNome + " e' fuori forma!"); }
+		else { System.out.print("L'Atleta " + pNome + " e' pronto!"); }
 
 		System.out.printf(" Efficienza Agonistica: %d/%d\n", efficienzaAgonistica, Thread.MAX_PRIORITY);
 	}
@@ -65,7 +62,6 @@ public class Atleta implements Runnable {
 	 * Mostra una barra di progresso proporzionale alla distanza percorsa
 	 */
 	void visualizzaProgresso() {
-		int numeroCaratteriRappresentativi = 30;
 		double rapportoProgresso = Math.min((progresso / g.getLunghezzaGara() * numeroCaratteriRappresentativi), numeroCaratteriRappresentativi);
 		String spaziatura = " ".repeat(g.getLunghezzaNomePiuLungo() - nome.length());
 		String strProgresso = "=".repeat((int)(rapportoProgresso));
@@ -74,7 +70,7 @@ public class Atleta implements Runnable {
 		if (progresso >= g.getLunghezzaGara()) {
 			System.out.printf("FINITO [%d] %s%s [%s%s]\n", numero, nome, spaziatura, strProgresso, strRimasto);
 		} else { 
-			System.out.printf("	   [%d] %s%s [%s%s ]\n", numero, nome, spaziatura, strProgresso, strRimasto); 
+			System.out.printf("       [%d] %s%s [%s%s ]\n", numero, nome, spaziatura, strProgresso, strRimasto); 
 		}
 	}
 
@@ -91,7 +87,7 @@ public class Atleta implements Runnable {
 		while (!g.sonoNelPodio(this)) {
 			cammina();
 
-			try { Thread.currentThread().sleep(1000); }
+			try { Thread.sleep(1000); }
 			catch (InterruptedException e) { System.err.println("Errore sleep"); }
 		}
 	}
