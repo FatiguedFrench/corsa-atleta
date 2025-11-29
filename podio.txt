@@ -1,130 +1,676 @@
-1. [65] bk | Priorita' Thread: 8/10
-2. [78] bx | Priorita' Thread: 10/10
-3. [96] cd | Priorita' Thread: 10/10
-4. [145] ea | Priorita' Thread: 9/10
-5. [148] ed | Priorita' Thread: 8/10
-6. [38] aj | Priorita' Thread: 8/10
-7. [40] al | Priorita' Thread: 9/10
-8. [41] am | Priorita' Thread: 10/10
-9. [60] bf | Priorita' Thread: 8/10
-10. [64] bj | Priorita' Thread: 6/10
-11. [71] bq | Priorita' Thread: 10/10
-12. [72] br | Priorita' Thread: 10/10
-13. [118] cz | Priorita' Thread: 7/10
-14. [126] dh | Priorita' Thread: 6/10
-15. [143] dy | Priorita' Thread: 6/10
-16. [170] ez | Priorita' Thread: 10/10
-17. [31] ac | Priorita' Thread: 8/10
-18. [50] av | Priorita' Thread: 8/10
-19. [55] ba | Priorita' Thread: 6/10
-20. [57] bc | Priorita' Thread: 7/10
-21. [68] bn | Priorita' Thread: 8/10
-22. [70] bp | Priorita' Thread: 10/10
-23. [75] bu | Priorita' Thread: 7/10
-24. [102] cj | Priorita' Thread: 5/10
-25. [106] cn | Priorita' Thread: 8/10
-26. [114] cv | Priorita' Thread: 8/10
-27. [115] cw | Priorita' Thread: 9/10
-28. [116] cx | Priorita' Thread: 9/10
-29. [120] db | Priorita' Thread: 5/10
-30. [134] dp | Priorita' Thread: 10/10
-31. [151] eg | Priorita' Thread: 5/10
-32. [155] ek | Priorita' Thread: 6/10
-33. [163] es | Priorita' Thread: 9/10
-34. [164] et | Priorita' Thread: 10/10
-35. [168] ex | Priorita' Thread: 5/10
-36. [43] ao | Priorita' Thread: 6/10
-37. [45] aq | Priorita' Thread: 9/10
-38. [46] ar | Priorita' Thread: 8/10
-39. [48] at | Priorita' Thread: 5/10
-40. [54] az | Priorita' Thread: 10/10
-41. [73] bs | Priorita' Thread: 4/10
-42. [99] cg | Priorita' Thread: 6/10
-43. [105] cm | Priorita' Thread: 10/10
-44. [110] cr | Priorita' Thread: 8/10
-45. [112] ct | Priorita' Thread: 4/10
-46. [122] dd | Priorita' Thread: 5/10
-47. [125] dg | Priorita' Thread: 9/10
-48. [140] dv | Priorita' Thread: 6/10
-49. [30] ab | Priorita' Thread: 7/10
-50. [37] ai | Priorita' Thread: 8/10
-51. [42] an | Priorita' Thread: 5/10
-52. [51] aw | Priorita' Thread: 8/10
-53. [117] cy | Priorita' Thread: 8/10
-54. [124] df | Priorita' Thread: 7/10
-55. [127] di | Priorita' Thread: 6/10
-56. [129] dk | Priorita' Thread: 8/10
-57. [132] dn | Priorita' Thread: 7/10
-58. [135] dq | Priorita' Thread: 9/10
-59. [152] eh | Priorita' Thread: 5/10
-60. [165] eu | Priorita' Thread: 4/10
-61. [56] bb | Priorita' Thread: 5/10
-62. [58] bd | Priorita' Thread: 6/10
-63. [62] bh | Priorita' Thread: 5/10
-64. [74] bt | Priorita' Thread: 8/10
-65. [77] bw | Priorita' Thread: 7/10
-66. [79] by | Priorita' Thread: 4/10
-67. [80] bz | Priorita' Thread: 6/10
-68. [93] ca | Priorita' Thread: 3/10
-69. [101] ci | Priorita' Thread: 10/10
-70. [104] cl | Priorita' Thread: 6/10
-71. [107] co | Priorita' Thread: 4/10
-72. [121] dc | Priorita' Thread: 2/10
-73. [138] dt | Priorita' Thread: 6/10
-74. [139] du | Priorita' Thread: 4/10
-75. [153] ei | Priorita' Thread: 7/10
-76. [154] ej | Priorita' Thread: 3/10
-77. [158] en | Priorita' Thread: 5/10
-78. [162] er | Priorita' Thread: 10/10
-79. [29] aa | Priorita' Thread: 9/10
-80. [32] ad | Priorita' Thread: 5/10
-81. [34] af | Priorita' Thread: 5/10
-82. [47] as | Priorita' Thread: 5/10
-83. [76] bv | Priorita' Thread: 4/10
-84. [119] da | Priorita' Thread: 3/10
-85. [130] dl | Priorita' Thread: 3/10
-86. [137] ds | Priorita' Thread: 4/10
-87. [141] dw | Priorita' Thread: 5/10
-88. [146] eb | Priorita' Thread: 6/10
-89. [147] ec | Priorita' Thread: 3/10
-90. [166] ev | Priorita' Thread: 8/10
-91. [53] ay | Priorita' Thread: 2/10
-92. [94] cb | Priorita' Thread: 4/10
-93. [109] cq | Priorita' Thread: 4/10
-94. [144] dz | Priorita' Thread: 5/10
-95. [156] el | Priorita' Thread: 4/10
-96. [161] eq | Priorita' Thread: 5/10
-97. [36] ah | Priorita' Thread: 3/10
-98. [39] ak | Priorita' Thread: 1/10
-99. [52] ax | Priorita' Thread: 2/10
-100. [95] cc | Priorita' Thread: 2/10
-101. [103] ck | Priorita' Thread: 1/10
-102. [108] cp | Priorita' Thread: 2/10
-103. [160] ep | Priorita' Thread: 5/10
-104. [66] bl | Priorita' Thread: 5/10
-105. [69] bo | Priorita' Thread: 2/10
-106. [97] ce | Priorita' Thread: 2/10
-107. [113] cu | Priorita' Thread: 1/10
-108. [133] do | Priorita' Thread: 2/10
-109. [136] dr | Priorita' Thread: 1/10
-110. [142] dx | Priorita' Thread: 1/10
-111. [159] eo | Priorita' Thread: 2/10
-112. [67] bm | Priorita' Thread: 3/10
-113. [100] ch | Priorita' Thread: 2/10
-114. [49] au | Priorita' Thread: 1/10
-115. [98] cf | Priorita' Thread: 1/10
-116. [149] ee | Priorita' Thread: 1/10
-117. [157] em | Priorita' Thread: 3/10
-118. [169] ey | Priorita' Thread: 2/10
-119. [59] be | Priorita' Thread: 1/10
-120. [61] bg | Priorita' Thread: 1/10
-121. [63] bi | Priorita' Thread: 1/10
-122. [111] cs | Priorita' Thread: 1/10
-123. [123] de | Priorita' Thread: 1/10
-124. [128] dj | Priorita' Thread: 1/10
-125. [167] ew | Priorita' Thread: 1/10
-126. [35] ag | Priorita' Thread: 1/10
-127. [44] ap | Priorita' Thread: 1/10
-128. [33] ae | Priorita' Thread: 2/10
-129. [150] ef | Priorita' Thread: 1/10
-130. [131] dm | Priorita' Thread: 1/10
+1. [211] gl | Priorita' Thread: 10/10 | Metri Percorsi: 1002.929
+2. [492] rg | Priorita' Thread: 10/10 | Metri Percorsi: 1007.197
+3. [156] ei | Priorita' Thread: 10/10 | Metri Percorsi: 1003.569
+4. [356] ma | Priorita' Thread: 9/10 | Metri Percorsi: 1019.832
+5. [482] qw | Priorita' Thread: 10/10 | Metri Percorsi: 1001.064
+6. [480] qu | Priorita' Thread: 10/10 | Metri Percorsi: 1024.383
+7. [525] sn | Priorita' Thread: 10/10 | Metri Percorsi: 1021.866
+8. [531] st | Priorita' Thread: 10/10 | Metri Percorsi: 1018.234
+9. [622] wg | Priorita' Thread: 10/10 | Metri Percorsi: 1004.914
+10. [360] me | Priorita' Thread: 10/10 | Metri Percorsi: 1017.375
+11. [617] wb | Priorita' Thread: 10/10 | Metri Percorsi: 1004.689
+12. [103] ch | Priorita' Thread: 10/10 | Metri Percorsi: 1012.212
+13. [118] cw | Priorita' Thread: 10/10 | Metri Percorsi: 1019.947
+14. [522] sk | Priorita' Thread: 10/10 | Metri Percorsi: 1018.298
+15. [34] ac | Priorita' Thread: 9/10 | Metri Percorsi: 1000.773
+16. [228] hc | Priorita' Thread: 10/10 | Metri Percorsi: 1001.592
+17. [349] lt | Priorita' Thread: 10/10 | Metri Percorsi: 1001.635
+18. [570] ug | Priorita' Thread: 10/10 | Metri Percorsi: 1011.416
+19. [36] ae | Priorita' Thread: 10/10 | Metri Percorsi: 1006.847
+20. [181] fh | Priorita' Thread: 10/10 | Metri Percorsi: 1016.151
+21. [318] ko | Priorita' Thread: 10/10 | Metri Percorsi: 1023.251
+22. [323] kt | Priorita' Thread: 10/10 | Metri Percorsi: 1002.933
+23. [419] ol | Priorita' Thread: 9/10 | Metri Percorsi: 1004.779
+24. [433] oz | Priorita' Thread: 10/10 | Metri Percorsi: 1009.424
+25. [605] vp | Priorita' Thread: 9/10 | Metri Percorsi: 1018.540
+26. [664] xw | Priorita' Thread: 10/10 | Metri Percorsi: 1005.301
+27. [688] yu | Priorita' Thread: 10/10 | Metri Percorsi: 1005.969
+28. [710] zq | Priorita' Thread: 10/10 | Metri Percorsi: 1001.810
+29. [232] hg | Priorita' Thread: 10/10 | Metri Percorsi: 1010.442
+30. [263] il | Priorita' Thread: 9/10 | Metri Percorsi: 1012.182
+31. [264] im | Priorita' Thread: 10/10 | Metri Percorsi: 1002.622
+32. [348] ls | Priorita' Thread: 10/10 | Metri Percorsi: 1005.764
+33. [394] nm | Priorita' Thread: 9/10 | Metri Percorsi: 1000.955
+34. [533] sv | Priorita' Thread: 9/10 | Metri Percorsi: 1001.510
+35. [585] uv | Priorita' Thread: 8/10 | Metri Percorsi: 1001.152
+36. [619] wd | Priorita' Thread: 10/10 | Metri Percorsi: 1015.186
+37. [115] ct | Priorita' Thread: 10/10 | Metri Percorsi: 1014.216
+38. [172] ey | Priorita' Thread: 9/10 | Metri Percorsi: 1015.502
+39. [184] fk | Priorita' Thread: 10/10 | Metri Percorsi: 1007.545
+40. [275] ix | Priorita' Thread: 10/10 | Metri Percorsi: 1003.479
+41. [336] lg | Priorita' Thread: 10/10 | Metri Percorsi: 1021.339
+42. [344] lo | Priorita' Thread: 9/10 | Metri Percorsi: 1000.317
+43. [409] ob | Priorita' Thread: 10/10 | Metri Percorsi: 1002.670
+44. [422] oo | Priorita' Thread: 10/10 | Metri Percorsi: 1006.931
+45. [451] pr | Priorita' Thread: 9/10 | Metri Percorsi: 1003.867
+46. [528] sq | Priorita' Thread: 10/10 | Metri Percorsi: 1010.698
+47. [66] bi | Priorita' Thread: 9/10 | Metri Percorsi: 1004.167
+48. [130] di | Priorita' Thread: 8/10 | Metri Percorsi: 1016.027
+49. [154] eg | Priorita' Thread: 8/10 | Metri Percorsi: 1016.617
+50. [421] on | Priorita' Thread: 10/10 | Metri Percorsi: 1000.933
+51. [473] qn | Priorita' Thread: 10/10 | Metri Percorsi: 1016.290
+52. [478] qs | Priorita' Thread: 9/10 | Metri Percorsi: 1016.518
+53. [592] vc | Priorita' Thread: 7/10 | Metri Percorsi: 1004.110
+54. [680] ym | Priorita' Thread: 10/10 | Metri Percorsi: 1002.907
+55. [136] do | Priorita' Thread: 9/10 | Metri Percorsi: 1003.933
+56. [152] ee | Priorita' Thread: 10/10 | Metri Percorsi: 1015.371
+57. [186] fm | Priorita' Thread: 8/10 | Metri Percorsi: 1007.147
+58. [220] gu | Priorita' Thread: 10/10 | Metri Percorsi: 1011.496
+59. [399] nr | Priorita' Thread: 9/10 | Metri Percorsi: 1020.123
+60. [468] qi | Priorita' Thread: 10/10 | Metri Percorsi: 1003.082
+61. [519] sh | Priorita' Thread: 8/10 | Metri Percorsi: 1003.825
+62. [104] ci | Priorita' Thread: 10/10 | Metri Percorsi: 1021.391
+63. [123] db | Priorita' Thread: 9/10 | Metri Percorsi: 1003.362
+64. [148] ea | Priorita' Thread: 10/10 | Metri Percorsi: 1008.995
+65. [235] hj | Priorita' Thread: 10/10 | Metri Percorsi: 1025.764
+66. [266] io | Priorita' Thread: 9/10 | Metri Percorsi: 1001.369
+67. [279] jb | Priorita' Thread: 8/10 | Metri Percorsi: 1002.958
+68. [331] lb | Priorita' Thread: 9/10 | Metri Percorsi: 1014.120
+69. [345] lp | Priorita' Thread: 9/10 | Metri Percorsi: 1006.125
+70. [388] ng | Priorita' Thread: 10/10 | Metri Percorsi: 1017.657
+71. [543] tf | Priorita' Thread: 7/10 | Metri Percorsi: 1011.689
+72. [544] tg | Priorita' Thread: 9/10 | Metri Percorsi: 1006.652
+73. [646] xe | Priorita' Thread: 9/10 | Metri Percorsi: 1005.103
+74. [75] br | Priorita' Thread: 8/10 | Metri Percorsi: 1002.209
+75. [106] ck | Priorita' Thread: 8/10 | Metri Percorsi: 1002.767
+76. [157] ej | Priorita' Thread: 9/10 | Metri Percorsi: 1007.488
+77. [365] mj | Priorita' Thread: 9/10 | Metri Percorsi: 1011.868
+78. [496] rk | Priorita' Thread: 9/10 | Metri Percorsi: 1023.904
+79. [516] se | Priorita' Thread: 9/10 | Metri Percorsi: 1003.769
+80. [521] sj | Priorita' Thread: 8/10 | Metri Percorsi: 1016.104
+81. [580] uq | Priorita' Thread: 8/10 | Metri Percorsi: 1002.481
+82. [674] yg | Priorita' Thread: 10/10 | Metri Percorsi: 1008.861
+83. [200] ga | Priorita' Thread: 8/10 | Metri Percorsi: 1011.109
+84. [352] lw | Priorita' Thread: 7/10 | Metri Percorsi: 1007.156
+85. [366] mk | Priorita' Thread: 9/10 | Metri Percorsi: 1003.416
+86. [376] mu | Priorita' Thread: 10/10 | Metri Percorsi: 1002.466
+87. [486] ra | Priorita' Thread: 9/10 | Metri Percorsi: 1001.428
+88. [555] tr | Priorita' Thread: 9/10 | Metri Percorsi: 1003.667
+89. [599] vj | Priorita' Thread: 10/10 | Metri Percorsi: 1002.597
+90. [33] ab | Priorita' Thread: 8/10 | Metri Percorsi: 1014.029
+91. [38] ag | Priorita' Thread: 9/10 | Metri Percorsi: 1012.883
+92. [65] bh | Priorita' Thread: 10/10 | Metri Percorsi: 1026.304
+93. [126] de | Priorita' Thread: 10/10 | Metri Percorsi: 1004.849
+94. [261] ij | Priorita' Thread: 10/10 | Metri Percorsi: 1004.693
+95. [292] jo | Priorita' Thread: 7/10 | Metri Percorsi: 1000.350
+96. [324] ku | Priorita' Thread: 10/10 | Metri Percorsi: 1004.256
+97. [401] nt | Priorita' Thread: 8/10 | Metri Percorsi: 1008.755
+98. [589] uz | Priorita' Thread: 7/10 | Metri Percorsi: 1009.331
+99. [656] xo | Priorita' Thread: 10/10 | Metri Percorsi: 1001.206
+100. [214] go | Priorita' Thread: 8/10 | Metri Percorsi: 1022.537
+101. [295] jr | Priorita' Thread: 8/10 | Metri Percorsi: 1024.389
+102. [307] kd | Priorita' Thread: 10/10 | Metri Percorsi: 1021.647
+103. [317] kn | Priorita' Thread: 8/10 | Metri Percorsi: 1002.801
+104. [371] mp | Priorita' Thread: 9/10 | Metri Percorsi: 1002.360
+105. [374] ms | Priorita' Thread: 8/10 | Metri Percorsi: 1004.791
+106. [426] os | Priorita' Thread: 10/10 | Metri Percorsi: 1016.355
+107. [439] pf | Priorita' Thread: 7/10 | Metri Percorsi: 1003.570
+108. [457] px | Priorita' Thread: 10/10 | Metri Percorsi: 1001.630
+109. [618] wc | Priorita' Thread: 8/10 | Metri Percorsi: 1005.470
+110. [655] xn | Priorita' Thread: 8/10 | Metri Percorsi: 1007.004
+111. [696] zc | Priorita' Thread: 7/10 | Metri Percorsi: 1008.204
+112. [79] bv | Priorita' Thread: 9/10 | Metri Percorsi: 1001.353
+113. [127] df | Priorita' Thread: 9/10 | Metri Percorsi: 1002.508
+114. [146] dy | Priorita' Thread: 7/10 | Metri Percorsi: 1015.563
+115. [325] kv | Priorita' Thread: 7/10 | Metri Percorsi: 1016.135
+116. [332] lc | Priorita' Thread: 8/10 | Metri Percorsi: 1021.772
+117. [389] nh | Priorita' Thread: 9/10 | Metri Percorsi: 1012.191
+118. [418] ok | Priorita' Thread: 9/10 | Metri Percorsi: 1007.958
+119. [447] pn | Priorita' Thread: 9/10 | Metri Percorsi: 1000.221
+120. [523] sl | Priorita' Thread: 9/10 | Metri Percorsi: 1020.108
+121. [72] bo | Priorita' Thread: 6/10 | Metri Percorsi: 1006.993
+122. [174] fa | Priorita' Thread: 9/10 | Metri Percorsi: 1001.479
+123. [202] gc | Priorita' Thread: 8/10 | Metri Percorsi: 1007.689
+124. [222] gw | Priorita' Thread: 7/10 | Metri Percorsi: 1002.073
+125. [444] pk | Priorita' Thread: 8/10 | Metri Percorsi: 1016.505
+126. [550] tm | Priorita' Thread: 8/10 | Metri Percorsi: 1016.682
+127. [121] cz | Priorita' Thread: 9/10 | Metri Percorsi: 1013.249
+128. [193] ft | Priorita' Thread: 8/10 | Metri Percorsi: 1019.215
+129. [535] sx | Priorita' Thread: 8/10 | Metri Percorsi: 1024.623
+130. [553] tp | Priorita' Thread: 9/10 | Metri Percorsi: 1007.565
+131. [138] dq | Priorita' Thread: 8/10 | Metri Percorsi: 1001.502
+132. [239] hn | Priorita' Thread: 8/10 | Metri Percorsi: 1006.564
+133. [249] hx | Priorita' Thread: 10/10 | Metri Percorsi: 1003.112
+134. [315] kl | Priorita' Thread: 7/10 | Metri Percorsi: 1001.318
+135. [461] qb | Priorita' Thread: 9/10 | Metri Percorsi: 1019.655
+136. [497] rl | Priorita' Thread: 10/10 | Metri Percorsi: 1022.692
+137. [629] wn | Priorita' Thread: 9/10 | Metri Percorsi: 1010.822
+138. [635] wt | Priorita' Thread: 8/10 | Metri Percorsi: 1003.860
+139. [114] cs | Priorita' Thread: 6/10 | Metri Percorsi: 1007.063
+140. [144] dw | Priorita' Thread: 7/10 | Metri Percorsi: 1008.148
+141. [169] ev | Priorita' Thread: 9/10 | Metri Percorsi: 1005.093
+142. [251] hz | Priorita' Thread: 9/10 | Metri Percorsi: 1021.004
+143. [417] oj | Priorita' Thread: 8/10 | Metri Percorsi: 1003.551
+144. [537] sz | Priorita' Thread: 7/10 | Metri Percorsi: 1014.745
+145. [571] uh | Priorita' Thread: 7/10 | Metri Percorsi: 1001.333
+146. [55] ax | Priorita' Thread: 6/10 | Metri Percorsi: 1007.600
+147. [160] em | Priorita' Thread: 8/10 | Metri Percorsi: 1002.633
+148. [161] en | Priorita' Thread: 8/10 | Metri Percorsi: 1000.469
+149. [410] oc | Priorita' Thread: 9/10 | Metri Percorsi: 1002.706
+150. [455] pv | Priorita' Thread: 7/10 | Metri Percorsi: 1011.577
+151. [506] ru | Priorita' Thread: 6/10 | Metri Percorsi: 1005.576
+152. [559] tv | Priorita' Thread: 7/10 | Metri Percorsi: 1004.995
+153. [564] ua | Priorita' Thread: 9/10 | Metri Percorsi: 1010.456
+154. [582] us | Priorita' Thread: 8/10 | Metri Percorsi: 1022.896
+155. [583] ut | Priorita' Thread: 8/10 | Metri Percorsi: 1010.109
+156. [80] bw | Priorita' Thread: 8/10 | Metri Percorsi: 1002.998
+157. [112] cq | Priorita' Thread: 8/10 | Metri Percorsi: 1010.450
+158. [310] kg | Priorita' Thread: 6/10 | Metri Percorsi: 1015.068
+159. [386] ne | Priorita' Thread: 7/10 | Metri Percorsi: 1000.873
+160. [423] op | Priorita' Thread: 7/10 | Metri Percorsi: 1000.280
+161. [430] ow | Priorita' Thread: 6/10 | Metri Percorsi: 1000.351
+162. [435] pb | Priorita' Thread: 8/10 | Metri Percorsi: 1005.301
+163. [562] ty | Priorita' Thread: 8/10 | Metri Percorsi: 1004.429
+164. [683] yp | Priorita' Thread: 7/10 | Metri Percorsi: 1008.015
+165. [107] cl | Priorita' Thread: 6/10 | Metri Percorsi: 1006.948
+166. [195] fv | Priorita' Thread: 9/10 | Metri Percorsi: 1003.664
+167. [223] gx | Priorita' Thread: 8/10 | Metri Percorsi: 1019.953
+168. [245] ht | Priorita' Thread: 8/10 | Metri Percorsi: 1005.243
+169. [284] jg | Priorita' Thread: 8/10 | Metri Percorsi: 1000.450
+170. [464] qe | Priorita' Thread: 9/10 | Metri Percorsi: 1004.346
+171. [474] qo | Priorita' Thread: 7/10 | Metri Percorsi: 1008.523
+172. [502] rq | Priorita' Thread: 9/10 | Metri Percorsi: 1012.347
+173. [507] rv | Priorita' Thread: 9/10 | Metri Percorsi: 1004.273
+174. [628] wm | Priorita' Thread: 7/10 | Metri Percorsi: 1000.003
+175. [673] yf | Priorita' Thread: 8/10 | Metri Percorsi: 1003.290
+176. [677] yj | Priorita' Thread: 7/10 | Metri Percorsi: 1000.317
+177. [192] fs | Priorita' Thread: 9/10 | Metri Percorsi: 1002.931
+178. [231] hf | Priorita' Thread: 7/10 | Metri Percorsi: 1002.404
+179. [359] md | Priorita' Thread: 8/10 | Metri Percorsi: 1007.334
+180. [490] re | Priorita' Thread: 8/10 | Metri Percorsi: 1005.604
+181. [491] rf | Priorita' Thread: 8/10 | Metri Percorsi: 1013.682
+182. [542] te | Priorita' Thread: 7/10 | Metri Percorsi: 1004.445
+183. [595] vf | Priorita' Thread: 7/10 | Metri Percorsi: 1009.433
+184. [621] wf | Priorita' Thread: 6/10 | Metri Percorsi: 1002.968
+185. [669] yb | Priorita' Thread: 7/10 | Metri Percorsi: 1016.219
+186. [687] yt | Priorita' Thread: 8/10 | Metri Percorsi: 1011.457
+187. [705] zl | Priorita' Thread: 9/10 | Metri Percorsi: 1000.721
+188. [213] gn | Priorita' Thread: 7/10 | Metri Percorsi: 1015.801
+189. [296] js | Priorita' Thread: 7/10 | Metri Percorsi: 1008.946
+190. [328] ky | Priorita' Thread: 6/10 | Metri Percorsi: 1007.693
+191. [333] ld | Priorita' Thread: 7/10 | Metri Percorsi: 1012.244
+192. [342] lm | Priorita' Thread: 7/10 | Metri Percorsi: 1003.832
+193. [372] mq | Priorita' Thread: 7/10 | Metri Percorsi: 1009.754
+194. [454] pu | Priorita' Thread: 7/10 | Metri Percorsi: 1000.518
+195. [530] ss | Priorita' Thread: 9/10 | Metri Percorsi: 1017.788
+196. [558] tu | Priorita' Thread: 8/10 | Metri Percorsi: 1000.651
+197. [563] tz | Priorita' Thread: 7/10 | Metri Percorsi: 1007.198
+198. [679] yl | Priorita' Thread: 8/10 | Metri Percorsi: 1000.290
+199. [289] jl | Priorita' Thread: 7/10 | Metri Percorsi: 1011.040
+200. [407] nz | Priorita' Thread: 5/10 | Metri Percorsi: 1005.702
+201. [452] ps | Priorita' Thread: 10/10 | Metri Percorsi: 1010.274
+202. [489] rd | Priorita' Thread: 7/10 | Metri Percorsi: 1013.188
+203. [512] sa | Priorita' Thread: 9/10 | Metri Percorsi: 1006.572
+204. [604] vo | Priorita' Thread: 8/10 | Metri Percorsi: 1000.146
+205. [168] eu | Priorita' Thread: 8/10 | Metri Percorsi: 1017.518
+206. [237] hl | Priorita' Thread: 8/10 | Metri Percorsi: 1011.846
+207. [294] jq | Priorita' Thread: 6/10 | Metri Percorsi: 1003.243
+208. [510] ry | Priorita' Thread: 6/10 | Metri Percorsi: 1003.735
+209. [62] be | Priorita' Thread: 9/10 | Metri Percorsi: 1007.953
+210. [540] tc | Priorita' Thread: 7/10 | Metri Percorsi: 1012.136
+211. [594] ve | Priorita' Thread: 8/10 | Metri Percorsi: 1000.065
+212. [60] bc | Priorita' Thread: 7/10 | Metri Percorsi: 1001.097
+213. [343] ln | Priorita' Thread: 7/10 | Metri Percorsi: 1019.855
+214. [565] ub | Priorita' Thread: 6/10 | Metri Percorsi: 1000.897
+215. [681] yn | Priorita' Thread: 6/10 | Metri Percorsi: 1011.824
+216. [47] ap | Priorita' Thread: 7/10 | Metri Percorsi: 1000.286
+217. [191] fr | Priorita' Thread: 6/10 | Metri Percorsi: 1009.699
+218. [236] hk | Priorita' Thread: 7/10 | Metri Percorsi: 1012.828
+219. [247] hv | Priorita' Thread: 8/10 | Metri Percorsi: 1018.489
+220. [53] av | Priorita' Thread: 7/10 | Metri Percorsi: 1006.199
+221. [122] da | Priorita' Thread: 7/10 | Metri Percorsi: 1009.511
+222. [145] dx | Priorita' Thread: 7/10 | Metri Percorsi: 1008.400
+223. [179] ff | Priorita' Thread: 7/10 | Metri Percorsi: 1011.170
+224. [216] gq | Priorita' Thread: 7/10 | Metri Percorsi: 1013.509
+225. [395] nn | Priorita' Thread: 6/10 | Metri Percorsi: 1003.791
+226. [420] om | Priorita' Thread: 5/10 | Metri Percorsi: 1001.045
+227. [462] qc | Priorita' Thread: 7/10 | Metri Percorsi: 1002.629
+228. [588] uy | Priorita' Thread: 6/10 | Metri Percorsi: 1000.966
+229. [647] xf | Priorita' Thread: 6/10 | Metri Percorsi: 1008.388
+230. [690] yw | Priorita' Thread: 6/10 | Metri Percorsi: 1017.692
+231. [370] mo | Priorita' Thread: 6/10 | Metri Percorsi: 1017.764
+232. [379] mx | Priorita' Thread: 6/10 | Metri Percorsi: 1016.274
+233. [413] of | Priorita' Thread: 8/10 | Metri Percorsi: 1014.265
+234. [445] pl | Priorita' Thread: 7/10 | Metri Percorsi: 1001.021
+235. [579] up | Priorita' Thread: 7/10 | Metri Percorsi: 1008.344
+236. [638] ww | Priorita' Thread: 6/10 | Metri Percorsi: 1004.580
+237. [671] yd | Priorita' Thread: 6/10 | Metri Percorsi: 1010.352
+238. [42] ak | Priorita' Thread: 6/10 | Metri Percorsi: 1016.861
+239. [147] dz | Priorita' Thread: 6/10 | Metri Percorsi: 1014.519
+240. [151] ed | Priorita' Thread: 7/10 | Metri Percorsi: 1008.023
+241. [268] iq | Priorita' Thread: 7/10 | Metri Percorsi: 1007.748
+242. [321] kr | Priorita' Thread: 7/10 | Metri Percorsi: 1001.874
+243. [414] og | Priorita' Thread: 8/10 | Metri Percorsi: 1001.962
+244. [458] py | Priorita' Thread: 6/10 | Metri Percorsi: 1019.936
+245. [459] pz | Priorita' Thread: 7/10 | Metri Percorsi: 1018.547
+246. [503] rr | Priorita' Thread: 6/10 | Metri Percorsi: 1022.225
+247. [505] rt | Priorita' Thread: 6/10 | Metri Percorsi: 1009.799
+248. [534] sw | Priorita' Thread: 6/10 | Metri Percorsi: 1004.911
+249. [609] vt | Priorita' Thread: 8/10 | Metri Percorsi: 1019.672
+250. [652] xk | Priorita' Thread: 8/10 | Metri Percorsi: 1001.304
+251. [698] ze | Priorita' Thread: 7/10 | Metri Percorsi: 1006.166
+252. [94] by | Priorita' Thread: 5/10 | Metri Percorsi: 1004.375
+253. [166] es | Priorita' Thread: 6/10 | Metri Percorsi: 1018.503
+254. [241] hp | Priorita' Thread: 5/10 | Metri Percorsi: 1004.256
+255. [301] jx | Priorita' Thread: 6/10 | Metri Percorsi: 1002.196
+256. [434] pa | Priorita' Thread: 7/10 | Metri Percorsi: 1004.972
+257. [654] xm | Priorita' Thread: 6/10 | Metri Percorsi: 1008.235
+258. [689] yv | Priorita' Thread: 5/10 | Metri Percorsi: 1013.631
+259. [277] iz | Priorita' Thread: 6/10 | Metri Percorsi: 1004.669
+260. [320] kq | Priorita' Thread: 6/10 | Metri Percorsi: 1008.549
+261. [375] mt | Priorita' Thread: 7/10 | Metri Percorsi: 1003.824
+262. [441] ph | Priorita' Thread: 5/10 | Metri Percorsi: 1011.516
+263. [469] qj | Priorita' Thread: 6/10 | Metri Percorsi: 1000.448
+264. [557] tt | Priorita' Thread: 6/10 | Metri Percorsi: 1015.673
+265. [44] am | Priorita' Thread: 5/10 | Metri Percorsi: 1002.962
+266. [150] ec | Priorita' Thread: 7/10 | Metri Percorsi: 1016.144
+267. [201] gb | Priorita' Thread: 7/10 | Metri Percorsi: 1013.330
+268. [226] ha | Priorita' Thread: 6/10 | Metri Percorsi: 1008.155
+269. [271] it | Priorita' Thread: 5/10 | Metri Percorsi: 1010.480
+270. [431] ox | Priorita' Thread: 6/10 | Metri Percorsi: 1004.698
+271. [608] vs | Priorita' Thread: 6/10 | Metri Percorsi: 1007.700
+272. [63] bf | Priorita' Thread: 6/10 | Metri Percorsi: 1003.048
+273. [300] jw | Priorita' Thread: 6/10 | Metri Percorsi: 1003.133
+274. [302] jy | Priorita' Thread: 7/10 | Metri Percorsi: 1012.691
+275. [390] ni | Priorita' Thread: 7/10 | Metri Percorsi: 1015.830
+276. [485] qz | Priorita' Thread: 6/10 | Metri Percorsi: 1012.759
+277. [532] su | Priorita' Thread: 6/10 | Metri Percorsi: 1005.037
+278. [640] wy | Priorita' Thread: 5/10 | Metri Percorsi: 1011.377
+279. [692] yy | Priorita' Thread: 6/10 | Metri Percorsi: 1003.116
+280. [98] cc | Priorita' Thread: 6/10 | Metri Percorsi: 1010.185
+281. [215] gp | Priorita' Thread: 5/10 | Metri Percorsi: 1002.030
+282. [483] qx | Priorita' Thread: 5/10 | Metri Percorsi: 1003.596
+283. [96] ca | Priorita' Thread: 5/10 | Metri Percorsi: 1007.873
+284. [250] hy | Priorita' Thread: 5/10 | Metri Percorsi: 1007.558
+285. [339] lj | Priorita' Thread: 6/10 | Metri Percorsi: 1001.583
+286. [632] wq | Priorita' Thread: 5/10 | Metri Percorsi: 1001.065
+287. [685] yr | Priorita' Thread: 7/10 | Metri Percorsi: 1007.973
+288. [205] gf | Priorita' Thread: 6/10 | Metri Percorsi: 1010.656
+289. [391] nj | Priorita' Thread: 6/10 | Metri Percorsi: 1006.595
+290. [396] no | Priorita' Thread: 5/10 | Metri Percorsi: 1002.654
+291. [572] ui | Priorita' Thread: 5/10 | Metri Percorsi: 1011.243
+292. [596] vg | Priorita' Thread: 6/10 | Metri Percorsi: 1011.624
+293. [35] ad | Priorita' Thread: 7/10 | Metri Percorsi: 1011.241
+294. [176] fc | Priorita' Thread: 7/10 | Metri Percorsi: 1021.015
+295. [274] iw | Priorita' Thread: 5/10 | Metri Percorsi: 1011.648
+296. [338] li | Priorita' Thread: 4/10 | Metri Percorsi: 1016.856
+297. [610] vu | Priorita' Thread: 6/10 | Metri Percorsi: 1004.538
+298. [611] vv | Priorita' Thread: 5/10 | Metri Percorsi: 1002.919
+299. [663] xv | Priorita' Thread: 6/10 | Metri Percorsi: 1002.970
+300. [682] yo | Priorita' Thread: 5/10 | Metri Percorsi: 1005.187
+301. [162] eo | Priorita' Thread: 5/10 | Metri Percorsi: 1001.590
+302. [227] hb | Priorita' Thread: 5/10 | Metri Percorsi: 1011.262
+303. [335] lf | Priorita' Thread: 6/10 | Metri Percorsi: 1011.924
+304. [384] nc | Priorita' Thread: 5/10 | Metri Percorsi: 1007.725
+305. [405] nx | Priorita' Thread: 5/10 | Metri Percorsi: 1000.728
+306. [408] oa | Priorita' Thread: 5/10 | Metri Percorsi: 1010.158
+307. [626] wk | Priorita' Thread: 6/10 | Metri Percorsi: 1001.452
+308. [657] xp | Priorita' Thread: 8/10 | Metri Percorsi: 1008.536
+309. [676] yi | Priorita' Thread: 4/10 | Metri Percorsi: 1010.468
+310. [124] dc | Priorita' Thread: 7/10 | Metri Percorsi: 1001.291
+311. [163] ep | Priorita' Thread: 6/10 | Metri Percorsi: 1001.900
+312. [164] eq | Priorita' Thread: 6/10 | Metri Percorsi: 1002.762
+313. [188] fo | Priorita' Thread: 5/10 | Metri Percorsi: 1003.382
+314. [305] kb | Priorita' Thread: 5/10 | Metri Percorsi: 1005.862
+315. [406] ny | Priorita' Thread: 4/10 | Metri Percorsi: 1011.224
+316. [709] zp | Priorita' Thread: 4/10 | Metri Percorsi: 1001.050
+317. [212] gm | Priorita' Thread: 4/10 | Metri Percorsi: 1000.507
+318. [337] lh | Priorita' Thread: 5/10 | Metri Percorsi: 1001.921
+319. [643] xb | Priorita' Thread: 5/10 | Metri Percorsi: 1000.707
+320. [260] ii | Priorita' Thread: 5/10 | Metri Percorsi: 1014.757
+321. [347] lr | Priorita' Thread: 5/10 | Metri Percorsi: 1007.493
+322. [353] lx | Priorita' Thread: 6/10 | Metri Percorsi: 1019.339
+323. [460] qa | Priorita' Thread: 5/10 | Metri Percorsi: 1011.498
+324. [556] ts | Priorita' Thread: 6/10 | Metri Percorsi: 1010.996
+325. [574] uk | Priorita' Thread: 4/10 | Metri Percorsi: 1004.579
+326. [678] yk | Priorita' Thread: 5/10 | Metri Percorsi: 1009.027
+327. [81] bx | Priorita' Thread: 5/10 | Metri Percorsi: 1000.217
+328. [194] fu | Priorita' Thread: 5/10 | Metri Percorsi: 1003.920
+329. [383] nb | Priorita' Thread: 5/10 | Metri Percorsi: 1012.929
+330. [442] pi | Priorita' Thread: 5/10 | Metri Percorsi: 1002.489
+331. [398] nq | Priorita' Thread: 4/10 | Metri Percorsi: 1012.170
+332. [668] ya | Priorita' Thread: 5/10 | Metri Percorsi: 1000.057
+333. [694] za | Priorita' Thread: 5/10 | Metri Percorsi: 1011.901
+334. [209] gj | Priorita' Thread: 5/10 | Metri Percorsi: 1011.313
+335. [233] hh | Priorita' Thread: 5/10 | Metri Percorsi: 1006.739
+336. [593] vd | Priorita' Thread: 5/10 | Metri Percorsi: 1002.428
+337. [600] vk | Priorita' Thread: 5/10 | Metri Percorsi: 1000.909
+338. [675] yh | Priorita' Thread: 7/10 | Metri Percorsi: 1008.855
+339. [102] cg | Priorita' Thread: 6/10 | Metri Percorsi: 1000.966
+340. [116] cu | Priorita' Thread: 4/10 | Metri Percorsi: 1006.784
+341. [293] jp | Priorita' Thread: 6/10 | Metri Percorsi: 1002.289
+342. [350] lu | Priorita' Thread: 4/10 | Metri Percorsi: 1006.900
+343. [606] vq | Priorita' Thread: 5/10 | Metri Percorsi: 1011.175
+344. [67] bj | Priorita' Thread: 4/10 | Metri Percorsi: 1002.804
+345. [411] od | Priorita' Thread: 4/10 | Metri Percorsi: 1007.851
+346. [453] pt | Priorita' Thread: 4/10 | Metri Percorsi: 1015.097
+347. [598] vi | Priorita' Thread: 5/10 | Metri Percorsi: 1004.570
+348. [219] gt | Priorita' Thread: 4/10 | Metri Percorsi: 1012.991
+349. [357] mb | Priorita' Thread: 5/10 | Metri Percorsi: 1008.279
+350. [364] mi | Priorita' Thread: 5/10 | Metri Percorsi: 1013.973
+351. [501] rp | Priorita' Thread: 4/10 | Metri Percorsi: 1004.370
+352. [568] ue | Priorita' Thread: 6/10 | Metri Percorsi: 1014.707
+353. [607] vr | Priorita' Thread: 4/10 | Metri Percorsi: 1005.361
+354. [620] we | Priorita' Thread: 5/10 | Metri Percorsi: 1006.869
+355. [178] fe | Priorita' Thread: 5/10 | Metri Percorsi: 1009.714
+356. [207] gh | Priorita' Thread: 4/10 | Metri Percorsi: 1001.900
+357. [319] kp | Priorita' Thread: 4/10 | Metri Percorsi: 1008.587
+358. [467] qh | Priorita' Thread: 4/10 | Metri Percorsi: 1003.705
+359. [567] ud | Priorita' Thread: 4/10 | Metri Percorsi: 1004.814
+360. [601] vl | Priorita' Thread: 4/10 | Metri Percorsi: 1006.549
+361. [708] zo | Priorita' Thread: 4/10 | Metri Percorsi: 1003.944
+362. [76] bs | Priorita' Thread: 4/10 | Metri Percorsi: 1005.198
+363. [143] dv | Priorita' Thread: 4/10 | Metri Percorsi: 1003.905
+364. [153] ef | Priorita' Thread: 4/10 | Metri Percorsi: 1002.299
+365. [702] zi | Priorita' Thread: 4/10 | Metri Percorsi: 1008.899
+366. [715] zv | Priorita' Thread: 5/10 | Metri Percorsi: 1005.647
+367. [71] bn | Priorita' Thread: 4/10 | Metri Percorsi: 1010.756
+368. [185] fl | Priorita' Thread: 5/10 | Metri Percorsi: 1010.771
+369. [267] ip | Priorita' Thread: 4/10 | Metri Percorsi: 1012.479
+370. [278] ja | Priorita' Thread: 5/10 | Metri Percorsi: 1005.071
+371. [306] kc | Priorita' Thread: 5/10 | Metri Percorsi: 1009.946
+372. [368] mm | Priorita' Thread: 4/10 | Metri Percorsi: 1002.015
+373. [373] mr | Priorita' Thread: 5/10 | Metri Percorsi: 1000.513
+374. [590] va | Priorita' Thread: 5/10 | Metri Percorsi: 1016.214
+375. [59] bb | Priorita' Thread: 6/10 | Metri Percorsi: 1002.502
+376. [259] ih | Priorita' Thread: 5/10 | Metri Percorsi: 1010.710
+377. [526] so | Priorita' Thread: 4/10 | Metri Percorsi: 1009.166
+378. [712] zs | Priorita' Thread: 4/10 | Metri Percorsi: 1003.415
+379. [196] fw | Priorita' Thread: 4/10 | Metri Percorsi: 1004.215
+380. [224] gy | Priorita' Thread: 3/10 | Metri Percorsi: 1006.719
+381. [346] lq | Priorita' Thread: 4/10 | Metri Percorsi: 1002.219
+382. [387] nf | Priorita' Thread: 4/10 | Metri Percorsi: 1000.864
+383. [416] oi | Priorita' Thread: 5/10 | Metri Percorsi: 1000.888
+384. [649] xh | Priorita' Thread: 5/10 | Metri Percorsi: 1012.457
+385. [465] qf | Priorita' Thread: 4/10 | Metri Percorsi: 1006.890
+386. [513] sb | Priorita' Thread: 4/10 | Metri Percorsi: 1000.060
+387. [159] el | Priorita' Thread: 6/10 | Metri Percorsi: 1012.187
+388. [699] zf | Priorita' Thread: 5/10 | Metri Percorsi: 1017.384
+389. [182] fi | Priorita' Thread: 4/10 | Metri Percorsi: 1006.764
+390. [313] kj | Priorita' Thread: 4/10 | Metri Percorsi: 1011.100
+391. [326] kw | Priorita' Thread: 4/10 | Metri Percorsi: 1006.756
+392. [548] tk | Priorita' Thread: 4/10 | Metri Percorsi: 1010.769
+393. [706] zm | Priorita' Thread: 4/10 | Metri Percorsi: 1009.648
+394. [240] ho | Priorita' Thread: 4/10 | Metri Percorsi: 1000.715
+395. [246] hu | Priorita' Thread: 4/10 | Metri Percorsi: 1008.611
+396. [539] tb | Priorita' Thread: 3/10 | Metri Percorsi: 1007.675
+397. [653] xl | Priorita' Thread: 4/10 | Metri Percorsi: 1005.377
+398. [131] dj | Priorita' Thread: 4/10 | Metri Percorsi: 1004.308
+399. [132] dk | Priorita' Thread: 4/10 | Metri Percorsi: 1006.920
+400. [316] km | Priorita' Thread: 4/10 | Metri Percorsi: 1001.443
+401. [446] pm | Priorita' Thread: 5/10 | Metri Percorsi: 1006.895
+402. [443] pj | Priorita' Thread: 3/10 | Metri Percorsi: 1001.933
+403. [463] qd | Priorita' Thread: 3/10 | Metri Percorsi: 1002.064
+404. [37] af | Priorita' Thread: 3/10 | Metri Percorsi: 1007.608
+405. [283] jf | Priorita' Thread: 4/10 | Metri Percorsi: 1000.248
+406. [425] or | Priorita' Thread: 4/10 | Metri Percorsi: 1013.126
+407. [520] si | Priorita' Thread: 3/10 | Metri Percorsi: 1002.049
+408. [541] td | Priorita' Thread: 5/10 | Metri Percorsi: 1004.365
+409. [158] ek | Priorita' Thread: 4/10 | Metri Percorsi: 1003.056
+410. [479] qt | Priorita' Thread: 4/10 | Metri Percorsi: 1016.810
+411. [494] ri | Priorita' Thread: 5/10 | Metri Percorsi: 1014.379
+412. [508] rw | Priorita' Thread: 3/10 | Metri Percorsi: 1006.607
+413. [511] rz | Priorita' Thread: 3/10 | Metri Percorsi: 1001.416
+414. [662] xu | Priorita' Thread: 4/10 | Metri Percorsi: 1002.853
+415. [700] zg | Priorita' Thread: 6/10 | Metri Percorsi: 1003.353
+416. [117] cv | Priorita' Thread: 4/10 | Metri Percorsi: 1002.604
+417. [165] er | Priorita' Thread: 3/10 | Metri Percorsi: 1006.255
+418. [189] fp | Priorita' Thread: 4/10 | Metri Percorsi: 1003.904
+419. [198] fy | Priorita' Thread: 3/10 | Metri Percorsi: 1004.682
+420. [367] ml | Priorita' Thread: 3/10 | Metri Percorsi: 1014.008
+421. [45] an | Priorita' Thread: 4/10 | Metri Percorsi: 1010.264
+422. [381] mz | Priorita' Thread: 3/10 | Metri Percorsi: 1008.049
+423. [428] ou | Priorita' Thread: 3/10 | Metri Percorsi: 1005.679
+424. [73] bp | Priorita' Thread: 3/10 | Metri Percorsi: 1002.245
+425. [514] sc | Priorita' Thread: 4/10 | Metri Percorsi: 1010.907
+426. [547] tj | Priorita' Thread: 3/10 | Metri Percorsi: 1000.907
+427. [549] tl | Priorita' Thread: 3/10 | Metri Percorsi: 1011.482
+428. [566] uc | Priorita' Thread: 3/10 | Metri Percorsi: 1008.622
+429. [650] xi | Priorita' Thread: 3/10 | Metri Percorsi: 1004.411
+430. [713] zt | Priorita' Thread: 3/10 | Metri Percorsi: 1012.114
+431. [180] fg | Priorita' Thread: 3/10 | Metri Percorsi: 1000.995
+432. [254] ic | Priorita' Thread: 3/10 | Metri Percorsi: 1002.798
+433. [576] um | Priorita' Thread: 4/10 | Metri Percorsi: 1005.127
+434. [586] uw | Priorita' Thread: 3/10 | Metri Percorsi: 1003.800
+435. [614] vy | Priorita' Thread: 5/10 | Metri Percorsi: 1004.181
+436. [167] et | Priorita' Thread: 3/10 | Metri Percorsi: 1009.719
+437. [253] ib | Priorita' Thread: 3/10 | Metri Percorsi: 1011.891
+438. [311] kh | Priorita' Thread: 4/10 | Metri Percorsi: 1016.681
+439. [378] mw | Priorita' Thread: 5/10 | Metri Percorsi: 1007.191
+440. [481] qv | Priorita' Thread: 4/10 | Metri Percorsi: 1004.842
+441. [684] yq | Priorita' Thread: 4/10 | Metri Percorsi: 1014.218
+442. [48] aq | Priorita' Thread: 2/10 | Metri Percorsi: 1006.517
+443. [111] cp | Priorita' Thread: 3/10 | Metri Percorsi: 1003.101
+444. [380] my | Priorita' Thread: 3/10 | Metri Percorsi: 1005.704
+445. [382] na | Priorita' Thread: 3/10 | Metri Percorsi: 1001.242
+446. [493] rh | Priorita' Thread: 4/10 | Metri Percorsi: 1005.190
+447. [633] wr | Priorita' Thread: 4/10 | Metri Percorsi: 1000.108
+448. [199] fz | Priorita' Thread: 3/10 | Metri Percorsi: 1003.613
+449. [258] ig | Priorita' Thread: 3/10 | Metri Percorsi: 1006.081
+450. [362] mg | Priorita' Thread: 2/10 | Metri Percorsi: 1001.881
+451. [424] oq | Priorita' Thread: 3/10 | Metri Percorsi: 1005.052
+452. [472] qm | Priorita' Thread: 3/10 | Metri Percorsi: 1005.047
+453. [695] zb | Priorita' Thread: 3/10 | Metri Percorsi: 1000.719
+454. [217] gr | Priorita' Thread: 3/10 | Metri Percorsi: 1003.626
+455. [393] nl | Priorita' Thread: 4/10 | Metri Percorsi: 1010.274
+456. [412] oe | Priorita' Thread: 3/10 | Metri Percorsi: 1000.621
+457. [560] tw | Priorita' Thread: 3/10 | Metri Percorsi: 1005.039
+458. [591] vb | Priorita' Thread: 4/10 | Metri Percorsi: 1002.068
+459. [686] ys | Priorita' Thread: 3/10 | Metri Percorsi: 1004.331
+460. [137] dp | Priorita' Thread: 3/10 | Metri Percorsi: 1000.964
+461. [265] in | Priorita' Thread: 3/10 | Metri Percorsi: 1001.966
+462. [403] nv | Priorita' Thread: 2/10 | Metri Percorsi: 1001.740
+463. [436] pc | Priorita' Thread: 3/10 | Metri Percorsi: 1001.945
+464. [450] pq | Priorita' Thread: 3/10 | Metri Percorsi: 1012.909
+465. [524] sm | Priorita' Thread: 3/10 | Metri Percorsi: 1008.109
+466. [39] ah | Priorita' Thread: 3/10 | Metri Percorsi: 1005.761
+467. [517] sf | Priorita' Thread: 2/10 | Metri Percorsi: 1005.402
+468. [552] to | Priorita' Thread: 3/10 | Metri Percorsi: 1003.004
+469. [625] wj | Priorita' Thread: 3/10 | Metri Percorsi: 1006.933
+470. [641] wz | Priorita' Thread: 3/10 | Metri Percorsi: 1010.020
+471. [175] fb | Priorita' Thread: 3/10 | Metri Percorsi: 1014.877
+472. [487] rb | Priorita' Thread: 3/10 | Metri Percorsi: 1001.836
+473. [612] vw | Priorita' Thread: 3/10 | Metri Percorsi: 1005.450
+474. [616] wa | Priorita' Thread: 2/10 | Metri Percorsi: 1008.841
+475. [56] ay | Priorita' Thread: 4/10 | Metri Percorsi: 1006.242
+476. [100] ce | Priorita' Thread: 3/10 | Metri Percorsi: 1001.070
+477. [128] dg | Priorita' Thread: 4/10 | Metri Percorsi: 1000.025
+478. [538] ta | Priorita' Thread: 2/10 | Metri Percorsi: 1002.282
+479. [658] xq | Priorita' Thread: 3/10 | Metri Percorsi: 1002.842
+480. [718] zy | Priorita' Thread: 3/10 | Metri Percorsi: 1001.404
+481. [113] cr | Priorita' Thread: 2/10 | Metri Percorsi: 1009.967
+482. [120] cy | Priorita' Thread: 3/10 | Metri Percorsi: 1002.105
+483. [149] eb | Priorita' Thread: 3/10 | Metri Percorsi: 1005.278
+484. [187] fn | Priorita' Thread: 3/10 | Metri Percorsi: 1002.452
+485. [308] ke | Priorita' Thread: 3/10 | Metri Percorsi: 1001.411
+486. [527] sp | Priorita' Thread: 4/10 | Metri Percorsi: 1004.980
+487. [597] vh | Priorita' Thread: 4/10 | Metri Percorsi: 1013.764
+488. [665] xx | Priorita' Thread: 3/10 | Metri Percorsi: 1007.988
+489. [297] jt | Priorita' Thread: 3/10 | Metri Percorsi: 1015.053
+490. [438] pe | Priorita' Thread: 3/10 | Metri Percorsi: 1000.563
+491. [272] iu | Priorita' Thread: 4/10 | Metri Percorsi: 1001.701
+492. [303] jz | Priorita' Thread: 2/10 | Metri Percorsi: 1001.032
+493. [361] mf | Priorita' Thread: 2/10 | Metri Percorsi: 1000.057
+494. [488] rc | Priorita' Thread: 2/10 | Metri Percorsi: 1010.445
+495. [703] zj | Priorita' Thread: 3/10 | Metri Percorsi: 1002.633
+496. [170] ew | Priorita' Thread: 3/10 | Metri Percorsi: 1000.519
+497. [298] ju | Priorita' Thread: 3/10 | Metri Percorsi: 1002.061
+498. [551] tn | Priorita' Thread: 3/10 | Metri Percorsi: 1000.512
+499. [569] uf | Priorita' Thread: 2/10 | Metri Percorsi: 1005.215
+500. [229] hd | Priorita' Thread: 2/10 | Metri Percorsi: 1001.655
+501. [602] vm | Priorita' Thread: 2/10 | Metri Percorsi: 1005.077
+502. [225] gz | Priorita' Thread: 2/10 | Metri Percorsi: 1007.136
+503. [697] zd | Priorita' Thread: 2/10 | Metri Percorsi: 1008.482
+504. [554] tq | Priorita' Thread: 3/10 | Metri Percorsi: 1006.934
+505. [636] wu | Priorita' Thread: 2/10 | Metri Percorsi: 1002.776
+506. [437] pd | Priorita' Thread: 3/10 | Metri Percorsi: 1004.582
+507. [495] rj | Priorita' Thread: 2/10 | Metri Percorsi: 1007.077
+508. [32] aa | Priorita' Thread: 2/10 | Metri Percorsi: 1005.145
+509. [49] ar | Priorita' Thread: 2/10 | Metri Percorsi: 1005.323
+510. [70] bm | Priorita' Thread: 3/10 | Metri Percorsi: 1005.804
+511. [252] ia | Priorita' Thread: 2/10 | Metri Percorsi: 1001.100
+512. [327] kx | Priorita' Thread: 2/10 | Metri Percorsi: 1004.293
+513. [46] ao | Priorita' Thread: 2/10 | Metri Percorsi: 1004.650
+514. [99] cd | Priorita' Thread: 3/10 | Metri Percorsi: 1009.343
+515. [110] co | Priorita' Thread: 2/10 | Metri Percorsi: 1007.050
+516. [693] yz | Priorita' Thread: 2/10 | Metri Percorsi: 1001.351
+517. [57] az | Priorita' Thread: 2/10 | Metri Percorsi: 1007.805
+518. [61] bd | Priorita' Thread: 2/10 | Metri Percorsi: 1007.241
+519. [286] ji | Priorita' Thread: 2/10 | Metri Percorsi: 1009.207
+520. [341] ll | Priorita' Thread: 2/10 | Metri Percorsi: 1004.133
+521. [577] un | Priorita' Thread: 3/10 | Metri Percorsi: 1012.127
+522. [711] zr | Priorita' Thread: 3/10 | Metri Percorsi: 1014.449
+523. [515] sd | Priorita' Thread: 2/10 | Metri Percorsi: 1006.096
+524. [581] ur | Priorita' Thread: 3/10 | Metri Percorsi: 1005.701
+525. [659] xr | Priorita' Thread: 2/10 | Metri Percorsi: 1008.325
+526. [719] zz | Priorita' Thread: 2/10 | Metri Percorsi: 1004.352
+527. [50] as | Priorita' Thread: 2/10 | Metri Percorsi: 1002.776
+528. [204] ge | Priorita' Thread: 3/10 | Metri Percorsi: 1003.142
+529. [340] lk | Priorita' Thread: 3/10 | Metri Percorsi: 1006.349
+530. [432] oy | Priorita' Thread: 2/10 | Metri Percorsi: 1008.702
+531. [575] ul | Priorita' Thread: 2/10 | Metri Percorsi: 1009.368
+532. [644] xc | Priorita' Thread: 3/10 | Metri Percorsi: 1000.036
+533. [95] bz | Priorita' Thread: 2/10 | Metri Percorsi: 1006.909
+534. [129] dh | Priorita' Thread: 2/10 | Metri Percorsi: 1008.551
+535. [139] dr | Priorita' Thread: 2/10 | Metri Percorsi: 1005.887
+536. [351] lv | Priorita' Thread: 3/10 | Metri Percorsi: 1005.633
+537. [312] ki | Priorita' Thread: 2/10 | Metri Percorsi: 1010.422
+538. [355] lz | Priorita' Thread: 2/10 | Metri Percorsi: 1001.467
+539. [476] qq | Priorita' Thread: 3/10 | Metri Percorsi: 1021.774
+540. [287] jj | Priorita' Thread: 2/10 | Metri Percorsi: 1000.464
+541. [330] la | Priorita' Thread: 2/10 | Metri Percorsi: 1005.320
+542. [400] ns | Priorita' Thread: 1/10 | Metri Percorsi: 1008.612
+543. [58] ba | Priorita' Thread: 2/10 | Metri Percorsi: 1011.532
+544. [429] ov | Priorita' Thread: 2/10 | Metri Percorsi: 1000.007
+545. [500] ro | Priorita' Thread: 2/10 | Metri Percorsi: 1000.010
+546. [639] wx | Priorita' Thread: 2/10 | Metri Percorsi: 1000.224
+547. [40] ai | Priorita' Thread: 2/10 | Metri Percorsi: 1004.000
+548. [645] xd | Priorita' Thread: 2/10 | Metri Percorsi: 1003.324
+549. [218] gs | Priorita' Thread: 3/10 | Metri Percorsi: 1002.895
+550. [613] vx | Priorita' Thread: 2/10 | Metri Percorsi: 1000.331
+551. [173] ez | Priorita' Thread: 1/10 | Metri Percorsi: 1002.030
+552. [354] ly | Priorita' Thread: 1/10 | Metri Percorsi: 1005.639
+553. [587] ux | Priorita' Thread: 1/10 | Metri Percorsi: 1003.508
+554. [291] jn | Priorita' Thread: 1/10 | Metri Percorsi: 1000.370
+555. [369] mn | Priorita' Thread: 1/10 | Metri Percorsi: 1010.803
+556. [624] wi | Priorita' Thread: 2/10 | Metri Percorsi: 1001.513
+557. [634] ws | Priorita' Thread: 2/10 | Metri Percorsi: 1006.832
+558. [358] mc | Priorita' Thread: 2/10 | Metri Percorsi: 1002.417
+559. [108] cm | Priorita' Thread: 1/10 | Metri Percorsi: 1006.683
+560. [529] sr | Priorita' Thread: 2/10 | Metri Percorsi: 1001.071
+561. [623] wh | Priorita' Thread: 2/10 | Metri Percorsi: 1000.124
+562. [661] xt | Priorita' Thread: 2/10 | Metri Percorsi: 1001.617
+563. [672] ye | Priorita' Thread: 2/10 | Metri Percorsi: 1001.543
+564. [691] yx | Priorita' Thread: 3/10 | Metri Percorsi: 1004.162
+565. [140] ds | Priorita' Thread: 2/10 | Metri Percorsi: 1000.741
+566. [171] ex | Priorita' Thread: 1/10 | Metri Percorsi: 1005.286
+567. [208] gi | Priorita' Thread: 1/10 | Metri Percorsi: 1003.923
+568. [270] is | Priorita' Thread: 2/10 | Metri Percorsi: 1003.118
+569. [536] sy | Priorita' Thread: 1/10 | Metri Percorsi: 1002.773
+570. [545] th | Priorita' Thread: 1/10 | Metri Percorsi: 1002.249
+571. [573] uj | Priorita' Thread: 2/10 | Metri Percorsi: 1002.174
+572. [105] cj | Priorita' Thread: 1/10 | Metri Percorsi: 1006.721
+573. [203] gd | Priorita' Thread: 1/10 | Metri Percorsi: 1004.585
+574. [234] hi | Priorita' Thread: 1/10 | Metri Percorsi: 1000.699
+575. [392] nk | Priorita' Thread: 2/10 | Metri Percorsi: 1008.775
+576. [377] mv | Priorita' Thread: 1/10 | Metri Percorsi: 1007.389
+577. [546] ti | Priorita' Thread: 1/10 | Metri Percorsi: 1005.873
+578. [125] dd | Priorita' Thread: 1/10 | Metri Percorsi: 1002.134
+579. [716] zw | Priorita' Thread: 1/10 | Metri Percorsi: 1003.225
+580. [627] wl | Priorita' Thread: 2/10 | Metri Percorsi: 1002.307
+581. [314] kk | Priorita' Thread: 1/10 | Metri Percorsi: 1009.994
+582. [415] oh | Priorita' Thread: 1/10 | Metri Percorsi: 1009.236
+583. [499] rn | Priorita' Thread: 1/10 | Metri Percorsi: 1008.643
+584. [651] xj | Priorita' Thread: 1/10 | Metri Percorsi: 1002.784
+585. [427] ot | Priorita' Thread: 1/10 | Metri Percorsi: 1002.025
+586. [578] uo | Priorita' Thread: 1/10 | Metri Percorsi: 1006.808
+587. [206] gg | Priorita' Thread: 1/10 | Metri Percorsi: 1004.301
+588. [704] zk | Priorita' Thread: 1/10 | Metri Percorsi: 1002.166
+589. [243] hr | Priorita' Thread: 1/10 | Metri Percorsi: 1001.727
+590. [670] yc | Priorita' Thread: 1/10 | Metri Percorsi: 1003.878
+591. [134] dm | Priorita' Thread: 1/10 | Metri Percorsi: 1009.700
+592. [456] pw | Priorita' Thread: 1/10 | Metri Percorsi: 1010.845
+593. [68] bk | Priorita' Thread: 1/10 | Metri Percorsi: 1003.807
+594. [449] pp | Priorita' Thread: 1/10 | Metri Percorsi: 1002.408
+595. [584] uu | Priorita' Thread: 1/10 | Metri Percorsi: 1005.759
+596. [54] aw | Priorita' Thread: 1/10 | Metri Percorsi: 1001.343
+597. [363] mh | Priorita' Thread: 1/10 | Metri Percorsi: 1004.283
+598. [509] rx | Priorita' Thread: 1/10 | Metri Percorsi: 1006.114
+599. [155] eh | Priorita' Thread: 1/10 | Metri Percorsi: 1003.036
+600. [256] ie | Priorita' Thread: 1/10 | Metri Percorsi: 1001.723
+601. [334] le | Priorita' Thread: 1/10 | Metri Percorsi: 1002.969
+602. [41] aj | Priorita' Thread: 1/10 | Metri Percorsi: 1002.881
+603. [197] fx | Priorita' Thread: 1/10 | Metri Percorsi: 1005.922
+604. [244] hs | Priorita' Thread: 1/10 | Metri Percorsi: 1001.315
+605. [135] dn | Priorita' Thread: 1/10 | Metri Percorsi: 1010.094
+606. [276] iy | Priorita' Thread: 1/10 | Metri Percorsi: 1000.114
+607. [631] wp | Priorita' Thread: 1/10 | Metri Percorsi: 1000.656
+608. [230] he | Priorita' Thread: 1/10 | Metri Percorsi: 1004.858
+609. [273] iv | Priorita' Thread: 1/10 | Metri Percorsi: 1006.241
+610. [210] gk | Priorita' Thread: 1/10 | Metri Percorsi: 1004.358
+611. [322] ks | Priorita' Thread: 1/10 | Metri Percorsi: 1003.542
+612. [477] qr | Priorita' Thread: 1/10 | Metri Percorsi: 1010.192
+613. [637] wv | Priorita' Thread: 1/10 | Metri Percorsi: 1002.545
+614. [97] cb | Priorita' Thread: 1/10 | Metri Percorsi: 1002.734
+615. [74] bq | Priorita' Thread: 1/10 | Metri Percorsi: 1004.277
+616. [484] qy | Priorita' Thread: 1/10 | Metri Percorsi: 1006.627
+617. [397] np | Priorita' Thread: 1/10 | Metri Percorsi: 1000.757
+618. [119] cx | Priorita' Thread: 1/10 | Metri Percorsi: 1010.611
+619. [309] kf | Priorita' Thread: 1/10 | Metri Percorsi: 1000.535
+620. [615] vz | Priorita' Thread: 1/10 | Metri Percorsi: 1009.608
+621. [642] xa | Priorita' Thread: 3/10 | Metri Percorsi: 999.557
+622. [101] cf | Priorita' Thread: 3/10 | Metri Percorsi: 993.712
+623. [183] fj | Priorita' Thread: 10/10 | Metri Percorsi: 955.651
+624. [238] hm | Priorita' Thread: 3/10 | Metri Percorsi: 916.445
+625. [701] zh | Priorita' Thread: 7/10 | Metri Percorsi: 883.361
+626. [280] jc | Priorita' Thread: 3/10 | Metri Percorsi: 880.393
+627. [51] at | Priorita' Thread: 7/10 | Metri Percorsi: 853.256
+628. [440] pg | Priorita' Thread: 2/10 | Metri Percorsi: 820.782
+629. [707] zn | Priorita' Thread: 1/10 | Metri Percorsi: 807.010
+630. [77] bt | Priorita' Thread: 2/10 | Metri Percorsi: 770.799
+631. [603] vn | Priorita' Thread: 2/10 | Metri Percorsi: 763.574
+632. [714] zu | Priorita' Thread: 7/10 | Metri Percorsi: 755.627
+633. [190] fq | Priorita' Thread: 5/10 | Metri Percorsi: 746.665
+634. [177] fd | Priorita' Thread: 5/10 | Metri Percorsi: 725.855
+635. [475] qp | Priorita' Thread: 8/10 | Metri Percorsi: 723.265
+636. [404] nw | Priorita' Thread: 10/10 | Metri Percorsi: 713.708
+637. [78] bu | Priorita' Thread: 3/10 | Metri Percorsi: 711.395
+638. [504] rs | Priorita' Thread: 4/10 | Metri Percorsi: 667.869
+639. [448] po | Priorita' Thread: 4/10 | Metri Percorsi: 611.773
+640. [248] hw | Priorita' Thread: 3/10 | Metri Percorsi: 594.050
+641. [518] sg | Priorita' Thread: 8/10 | Metri Percorsi: 589.577
+642. [299] jv | Priorita' Thread: 9/10 | Metri Percorsi: 583.461
+643. [262] ik | Priorita' Thread: 8/10 | Metri Percorsi: 570.027
+644. [288] jk | Priorita' Thread: 1/10 | Metri Percorsi: 566.155
+645. [498] rm | Priorita' Thread: 1/10 | Metri Percorsi: 522.364
+646. [43] al | Priorita' Thread: 10/10 | Metri Percorsi: 519.451
+647. [666] xy | Priorita' Thread: 6/10 | Metri Percorsi: 515.626
+648. [269] ir | Priorita' Thread: 7/10 | Metri Percorsi: 477.749
+649. [667] xz | Priorita' Thread: 1/10 | Metri Percorsi: 473.446
+650. [304] ka | Priorita' Thread: 8/10 | Metri Percorsi: 458.186
+651. [133] dl | Priorita' Thread: 2/10 | Metri Percorsi: 457.923
+652. [717] zx | Priorita' Thread: 3/10 | Metri Percorsi: 409.643
+653. [466] qg | Priorita' Thread: 5/10 | Metri Percorsi: 399.687
+654. [290] jm | Priorita' Thread: 2/10 | Metri Percorsi: 398.162
+655. [281] jd | Priorita' Thread: 5/10 | Metri Percorsi: 369.606
+656. [64] bg | Priorita' Thread: 7/10 | Metri Percorsi: 358.544
+657. [242] hq | Priorita' Thread: 10/10 | Metri Percorsi: 329.008
+658. [471] ql | Priorita' Thread: 1/10 | Metri Percorsi: 292.798
+659. [282] je | Priorita' Thread: 1/10 | Metri Percorsi: 264.835
+660. [385] nd | Priorita' Thread: 9/10 | Metri Percorsi: 257.102
+661. [141] dt | Priorita' Thread: 3/10 | Metri Percorsi: 215.783
+662. [52] au | Priorita' Thread: 5/10 | Metri Percorsi: 207.692
+663. [329] kz | Priorita' Thread: 2/10 | Metri Percorsi: 199.045
+664. [660] xs | Priorita' Thread: 2/10 | Metri Percorsi: 185.578
+665. [221] gv | Priorita' Thread: 2/10 | Metri Percorsi: 180.535
+666. [109] cn | Priorita' Thread: 8/10 | Metri Percorsi: 176.726
+667. [630] wo | Priorita' Thread: 3/10 | Metri Percorsi: 168.752
+668. [470] qk | Priorita' Thread: 2/10 | Metri Percorsi: 166.453
+669. [648] xg | Priorita' Thread: 5/10 | Metri Percorsi: 127.149
+670. [257] if | Priorita' Thread: 4/10 | Metri Percorsi: 103.668
+671. [561] tx | Priorita' Thread: 4/10 | Metri Percorsi: 95.963
+672. [285] jh | Priorita' Thread: 4/10 | Metri Percorsi: 73.526
+673. [402] nu | Priorita' Thread: 4/10 | Metri Percorsi: 56.986
+674. [142] du | Priorita' Thread: 2/10 | Metri Percorsi: 38.896
+675. [255] id | Priorita' Thread: 2/10 | Metri Percorsi: 31.321
+676. [69] bl | Priorita' Thread: 4/10 | Metri Percorsi: 23.890

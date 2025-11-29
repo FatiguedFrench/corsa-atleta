@@ -26,7 +26,7 @@ public class Giudice extends Thread {
 	 * Gestore per le operazioni di I/O su file.
 	 * Istanza di supporto per salvare su file le informazioni della gara
 	 */
-	GestioneFile filer =  new GestioneFile();
+	GestioneFile filer =	new GestioneFile();
 
 	/**
 	 * Riferimento alla classe per
@@ -52,7 +52,7 @@ public class Giudice extends Thread {
 	 * Valore costante che indica la distanza che un atleta deve
 	 * percorrere per essere considerato "arrivato" e andare nel {@link #Podio}
 	 */
-	final double LUNGHEZZAGARA = 100.0;
+	final double LUNGHEZZAGARA = 1000.0;
 
 	/**
 	 * Costruttore di {@link Giudice}
@@ -84,6 +84,34 @@ public class Giudice extends Thread {
 	}
 
 	/**
+	 * 
+	 */
+	private void ritiratiNelPodio() {
+		ArrayList<Atleta> ritirati = new ArrayList<>();
+
+		for (Atleta a : Atleti) {
+			if (a.Attesa == -1) {
+				ritirati.add(a);
+			}
+		}
+
+		ArrayList<Atleta> ordinati = new ArrayList<>(ritirati);
+		Atleta temp;
+
+		for (int i = 0; i < ordinati.size() - 1; i++) {
+			for (int j = 0; j < ordinati.size() - 1 - i; j++) {
+				if (ordinati.get(j).progresso < ordinati.get(j + 1).progresso) {
+						temp = ordinati.get(j);
+						ordinati.set(j, ordinati.get(j + 1));
+						ordinati.set(j + 1, temp);
+				}
+			}
+		}
+
+		Podio.addAll(ordinati);
+	}
+
+	/**
 	 * Monitora il progresso di tutti gli atleti registrati.
 	 * Chiama per ciascun atleta visualizzaProgresso() e controlla se
 	 * ha raggiunto o superato LUNGHEZZAGARA, in caso, lo aggiunge
@@ -93,16 +121,22 @@ public class Giudice extends Thread {
 	 * che effettua una pausa di 1s tra esecuzioni
 	 */
 	public void monitora() {
+		int i = 0;
+
 		for (Atleta a : Atleti) {
 			a.visualizzaProgresso();
 
 			if (!Podio.contains(a) && (a.progresso >= LUNGHEZZAGARA)) {
 				synchronized (lock) { Podio.add(a); }
-				if (Podio.containsAll(Atleti)) { fineGara(); return; }
 			}
+
+			if (a.Attesa == -1) { i++; }
+			if (Podio.containsAll(Atleti)) { fineGara(); return; }
+			else if (i == (Atleti.size() - Podio.size())) { ritiratiNelPodio(); fineGara(); return; }
 		}
 
-		System.out.printf("%s\n", "-".repeat(Atleta.numeroCaratteriRappresentativi + lunghezzaNomePiuLungo + 5 + 7 + Atleti.size() % 10));
+		System.out.printf("%s\n", "-".repeat(Atleta.numeroCaratteriRappresentativi + lunghezzaNomePiuLungo + 5 + 7 + 1 + Integer.toString(Atleti.size()).length()));
+
 		try { Thread.sleep(1000); }
 		catch (InterruptedException e) { System.err.println("Errore sleep"); }
 		monitora();
@@ -120,10 +154,15 @@ public class Giudice extends Thread {
 		System.out.println("Classifica (dal Primo all'Ultimo): ");
 		for (Atleta a : Podio) {
 			String spaziatura = " ".repeat(lunghezzaNomePiuLungo - a.nome.length());
-			System.out.printf("\t%d. [%d] %s%s | Priorita' Thread: %d/%d\n", ++i, a.numero, a.nome, spaziatura, a.efficienzaAgonistica, Thread.MAX_PRIORITY);
+			if (a.Attesa >= 0) {
+				System.out.printf("         %d. [%d] %s%s | Priorita' Thread: %d/%d\n", ++i, a.numero, a.nome, spaziatura, a.efficienzaAgonistica, Thread.MAX_PRIORITY);
+			} else {
+				System.out.printf("RITIRATO %d. [%d] %s%s | Priorita' Thread: %d/%d\n", ++i, a.numero, a.nome, spaziatura, a.efficienzaAgonistica, Thread.MAX_PRIORITY);
+			}
 		}
 
 		filer.scriviPodio(Podio);
+		Podio = Atleti;
 		return;
 	}
 
@@ -148,7 +187,7 @@ public class Giudice extends Thread {
 			if (a.nome.length() > lunghezzaNomePiuLungo) { lunghezzaNomePiuLungo = a.nome.length(); }
 			(new Thread(a)).start();
 		}
-		
+
 		monitora();
 	}
 }

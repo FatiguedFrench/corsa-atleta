@@ -4,7 +4,7 @@
  * il metodo {@code main}, punto di ingresso dell’applicazione.
  *
  * @author PixPix
- * @version 4.2
+ * @version 5.0
  */
 public class Gara {
 	/**

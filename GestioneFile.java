@@ -29,9 +29,9 @@ public class GestioneFile {
 				returnObj.add(new Atleta(nomeAtleta, g, ec));
 			}
 		} catch (IOException e) {
-			System.out.println("Errore nella lettura del file: " + e.getMessage()); 
+			System.out.println("Errore nella lettura del file: " + e.getMessage());
 		}
-	
+
 	return returnObj;
 	}
 
@@ -45,7 +45,7 @@ public class GestioneFile {
 		int i = 0;
 		try (PrintWriter writer = new PrintWriter(new FileWriter("podio.txt"))) {
 			for (Atleta a : podio) {
-				writer.printf("%d. [%d] %s | Priorita' Thread: %d/%d\n", ++i, a.numero, a.nome, a.efficienzaAgonistica, Thread.MAX_PRIORITY);
+				writer.printf("%d. [%d] %s | Priorita' Thread: %d/%d | Metri Percorsi: %.3f\n", ++i, a.numero, a.nome, a.efficienzaAgonistica, Thread.MAX_PRIORITY, a.progresso);
 			}
 		} catch (IOException e) { System.out.print("Errore Scrittura File"); }
 	}

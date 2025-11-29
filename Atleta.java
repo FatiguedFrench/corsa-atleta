@@ -13,6 +13,8 @@ public class Atleta implements Runnable {
 	double tempo;
 	/** */
 	EventiCausali ec;
+	/** */
+	int Attesa;
 	/** Nome dell'atleta */
 	String nome;
 	/** ID del thread */
@@ -22,7 +24,7 @@ public class Atleta implements Runnable {
 	/** Generatore di numeri casuali, utilizzato per determinare la priorita' e i progressi */
 	private Random rand;
 	/** Stile */
-	static final int numeroCaratteriRappresentativi = 50;
+	static final int numeroCaratteriRappresentativi = 100;
 
 	/**
 	 * Costruisce un nuovo atleta e lo registra presso il Giudice.
@@ -32,6 +34,7 @@ public class Atleta implements Runnable {
 	 * @param pG	Il Giudice che gestisce la gara.
 	 */
 	public Atleta(String pNome, Giudice pG, EventiCausali e) {
+		Attesa = 0;
 		rand = new Random();
 		progresso = 0.0;
 		nome = pNome;
@@ -69,8 +72,12 @@ public class Atleta implements Runnable {
 
 		if (progresso >= g.getLunghezzaGara()) {
 			System.out.printf("FINITO [%d] %s%s [%s%s]\n", numero, nome, spaziatura, strProgresso, strRimasto);
-		} else { 
-			System.out.printf("       [%d] %s%s [%s%s ]\n", numero, nome, spaziatura, strProgresso, strRimasto); 
+		} else if (Attesa > 0) {
+			System.out.printf("ATT. %d [%d] %s%s [%s%s ]\n", Attesa, numero, nome, spaziatura, strProgresso, strRimasto);
+		} else if (Attesa == -1){
+			System.out.printf("RITIRO [%d] %s%s [%s%s ]\n", numero, nome, spaziatura, strProgresso, strRimasto);
+		} else {
+			System.out.printf("       [%d] %s%s [%s%s ]\n", numero, nome, spaziatura, strProgresso, strRimasto);
 		}
 	}
 
@@ -84,8 +91,11 @@ public class Atleta implements Runnable {
 		Thread.currentThread().setPriority(efficienzaAgonistica);
 		numero = (int) Thread.currentThread().threadId();
 
-		while (!g.sonoNelPodio(this)) {
-			cammina();
+		while (!g.sonoNelPodio(this) && (Attesa >= 0)) {
+			if (Attesa == 0 ) {
+				cammina();
+				Attesa = ec.evento(rand);
+			} else { Attesa--; }
 
 			try { Thread.sleep(1000); }
 			catch (InterruptedException e) { System.err.println("Errore sleep"); }
