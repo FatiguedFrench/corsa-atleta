@@ -22,7 +22,7 @@ public class Giudice extends Thread {
 	private final Object lock = new Object();
 
 	/** Lunghezza totale della gara in metri. */
-	public final double LUNGHEZZAGARA = 500.0;
+	public final double LUNGHEZZAGARA = 50.0;
 
 	/** Costruttore del {@link Giudice} */
 	public Giudice(EventiCausali e) { ec = e; }
@@ -93,7 +93,7 @@ public class Giudice extends Thread {
 			else if (i == (Atleti.size() - Podio.size())) { ritiratiNelPodio(); fineGara(); return; }
 		}
 
-		System.out.printf("%s\n", "-".repeat(Atleta.numeroCaratteriRappresentativi + lunghezzaNomePiuLungo + Integer.toString(Atleti.size()).length()) + 13);
+		System.out.printf("%s\n", "-".repeat(Atleta.numeroCaratteriRappresentativi + lunghezzaNomePiuLungo + Integer.toString(Atleti.size()).length() + 13));
 
 		try { Thread.sleep(1000); }
 		catch (InterruptedException e) { System.err.println("Errore sleep"); }

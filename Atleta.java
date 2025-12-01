@@ -4,25 +4,25 @@ import java.util.Random;
  * Implementa {@link Runnable} */
 public class Atleta implements Runnable {
 	/** Priorità del thread */
-	int efficienzaAgonistica;
+	public int efficienzaAgonistica;
 	/** Progresso dell'atleta in metri */
-	double progresso;
+	public double progresso;
 	/** Tempo trascorso dall'inizio della gara */
-	double tempo;
+	private double tempo;
 	/** Riferimento per eventi casuali */
-	EventiCausali ec;
+	private EventiCausali ec;
 	/** Pausa in secondi dell'atleta */
-	int Attesa;
+	public int Attesa;
 	/** Nome dell'atleta */
-	String nome;
+	public String nome;
 	/** ID del thread */
-	int numero;
+	public int numero;
 	/** Riferimento al Giudice che monitora la gara */
-	Giudice g;
+	private Giudice g;
 	/** Generatore di numeri casuali */
 	private Random rand;
 	/** Stile */
-	static final int numeroCaratteriRappresentativi = 100;
+	static final public int numeroCaratteriRappresentativi = 100;
 
 	/** Costruttore */
 	public Atleta(String pNome, Giudice pG, EventiCausali e) {
@@ -44,14 +44,14 @@ public class Atleta implements Runnable {
 
 	/** Simula il movimento dell'atleta durante la gara.
 	Incrementa il progresso in maniera casuale e aggiorna il tempo trascorso */
-	void cammina() {
+	private void cammina() {
 		Random generatore = new Random();
 		progresso += generatore.nextDouble(10 + efficienzaAgonistica * 2);
 		tempo++;
 	}
 
 	/** Visualizza il progresso dell'atleta nella gara. */
-	void visualizzaProgresso() {
+	public void visualizzaProgresso() {
 		double rapportoProgresso = Math.min((progresso / g.getLunghezzaGara() * numeroCaratteriRappresentativi), numeroCaratteriRappresentativi);
 		String spaziatura = " ".repeat(g.getLunghezzaNomePiuLungo() - nome.length());
 		String strProgresso = "=".repeat((int)(rapportoProgresso));
