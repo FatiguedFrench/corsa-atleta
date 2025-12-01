@@ -95,6 +95,8 @@ public class Atleta implements Runnable {
 			if (Attesa == 0 ) {
 				cammina();
 				Attesa = ec.evento(rand);
+				double ritiro = progresso / g.LUNGHEZZAGARA;
+				if (Attesa == -1 && rand.nextDouble() < ritiro) { Attesa = 0; }
 			} else { Attesa--; }
 
 			try { Thread.sleep(1000); }

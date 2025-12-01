@@ -52,7 +52,7 @@ public class Giudice extends Thread {
 	 * Valore costante che indica la distanza che un atleta deve
 	 * percorrere per essere considerato "arrivato" e andare nel {@link #Podio}
 	 */
-	final double LUNGHEZZAGARA = 1000.0;
+	final double LUNGHEZZAGARA = 500.0;
 
 	/**
 	 * Costruttore di {@link Giudice}
@@ -167,13 +167,26 @@ public class Giudice extends Thread {
 	}
 
 	/**
+	 * 
+	 */
+	private ArrayList<Atleta> registraAtleti() throws Exception {
+		ArrayList<Atleta> possibiliAtleti = filer.registraAtleti("atleti.txt", this, ec);
+		
+		if (possibiliAtleti.size() == 0) { throw new Exception("Nessun Atleta nel File"); }
+		else if (possibiliAtleti.size() == 1) { throw new Exception("Troppi pochi Atleti nel File"); }
+		else if (possibiliAtleti.size() > 999) { throw new Exception("Troppi Atleti nel File"); }
+		else { return possibiliAtleti; }
+	}
+
+	/**
 	 * Metodo per avviare la gara. Registra gli atleti su file tramite
 	 * {@link GestioneFile#registraAtleti(String, Giudice)}, poi esegue un conto
 	 * alla rovescia e avvia ogni {@link Atleta} come thread separato. Infine
 	 * invoca {@link #monitora()} per iniziare il monitoraggio dei progressi.
 	 */
 	public void avviaGara() {
-		Atleti = filer.registraAtleti("atleti.txt", this, ec);
+		try { Atleti = registraAtleti(); }
+		catch(Exception errore) { System.out.println("Errore! " + errore.getMessage()); return; }
 
 		System.out.print("Inizio in ");
 		for (int i = 5; i > 0; i--) {
