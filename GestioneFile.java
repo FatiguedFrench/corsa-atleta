@@ -5,42 +5,25 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-/**
- * Classe responsabile della gestione dei file per la gara.
- * Si occupa della lettura dei nomi degli atleti e della scrittura del podio su un file
- */
+/** Classe responsabile della gestione dei file. */
 public class GestioneFile {
-	/**
-	 * Costruttore della classe GestioneFile.
-	 */
+	/** Costruttore della classe GestioneFile. */
 	public void GestoneFile() {}
 
-	/**
-	 * Legge i nomi degli atleti da un file di testo e crea gli oggetti Atleta registrandoli con il Giudice
-	 *
-	 * @param fileAtleti Percorso del file contenente i nomi degli atleti.
-	 * @param g		Riferimento al Giudice della gara.
-	 */
+	/** Legge i nomi degli atleti da un file di testo e crea gli oggetti Atleta registrandoli con il Giudice */
 	public ArrayList<Atleta> registraAtleti(String fileAtleti, Giudice g, EventiCausali ec) {
 		ArrayList<Atleta> returnObj = new ArrayList<>();
-	try (BufferedReader file = new BufferedReader(new FileReader(fileAtleti))) {
+		
+		try (BufferedReader file = new BufferedReader(new FileReader(fileAtleti))) {
 			String nomeAtleta;
-			while ((nomeAtleta = file.readLine()) != null) {
-				returnObj.add(new Atleta(nomeAtleta, g, ec));
-			}
-		} catch (IOException e) {
-			System.out.println("Errore nella lettura del file: " + e.getMessage());
-		}
+			while ((nomeAtleta = file.readLine()) != null) { returnObj.add(new Atleta(nomeAtleta, g, ec)); }
+		} catch (IOException e) { System.out.println("Errore nella lettura del file: " + e.getMessage()); }
 
-	return returnObj;
+		return returnObj;
 	}
 
-	/**
-	 * Scrive sul file "podio.txt" la classifica finale degli atleti.
-	 * Ogni atleta viene elencato con il suo numero, nome ed priorita' del Thread mentre era in esecuzione
-	 *
-	 * @param podio Lista di atleti ordinata secondo la classifica della gara.
-	 */
+	/** Scrive sul file "podio.txt" la classifica finale degli atleti.
+	 * Ogni atleta viene elencato con il suo numero, nome e priorita' del Thread mentre era in esecuzione */
 	public void scriviPodio(ArrayList<Atleta> podio) {
 		int i = 0;
 		try (PrintWriter writer = new PrintWriter(new FileWriter("podio.txt"))) {

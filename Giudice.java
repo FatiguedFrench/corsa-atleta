@@ -1,91 +1,51 @@
 import java.util.ArrayList;
 
 /**
- * Classe che rappresenta il giudice della gara.
- * Mantiene la lista degli atleti partecipanti, controlla il progresso
- * di ciascuno e costruisce il podio in modo sincronizzato quando un
- * atleta raggiunge minimo la lunghezza della gara {@link LUNGHEZZAGARA}.
+ * Classe del giudice della gara.
+ * Registra gli atleti, per ogni atleta crea il thread associato
+ * Monitora gli atleti nel loro progresso nella gara
+ * Scrive il podio a fine gara su file e lo mostra su schermo
  */
 public class Giudice extends Thread {
-	/**
-	 * Lista degli atleti partecipanti alla gara.
-	 * Ogni elemento è un {@link Atleta} che verrà avviato come thread durante
-	 * {@link #avviaGara()} e controllato periodicamente tramite {@link #monitora()}
-	 */
-	ArrayList<Atleta> Atleti = new ArrayList<>();
-
-	/**
-	 * Lista che rappresenta l'ordine di arrivo (la classifica).
-	 * Gli atleti vengono aggiunti durante {@link #monitora()} quando gli atleti
-	 * raggiungono la lunghezza di gara. Alla fine della gara, viene invocato
-	 * {@link #fineGara()} e la lista viene usata per mostrare la classifica
-	 */
-	ArrayList<Atleta> Podio = new ArrayList<>();
-
-	/**
-	 * Gestore per le operazioni di I/O su file.
-	 * Istanza di supporto per salvare su file le informazioni della gara
-	 */
-	GestioneFile filer =	new GestioneFile();
-
-	/**
-	 * Riferimento alla classe per
-	 * le anomalie agli atleti
-	 */
-	EventiCausali ec;
-
-	/**
-	 * Lunghezza (in caratteri) del nome più lungo tra gli atleti registrati.
-	 * Utilizzato per allineare la stampa della classifica
-	 */
-	int lunghezzaNomePiuLungo = 0;
-
-	/**
-	 * Oggetto usato per sincronizzare le modifiche concorrenti al podio.
-	 * Protegge le operazioni di aggiornamento del {@link #Podio} quando più
-	 * thread segnalano il completamento simultaneamente
-	 */
+	/** Lista degli atleti partecipanti alla gara. */
+	private ArrayList<Atleta> Atleti = new ArrayList<>();
+	/** La classifica ordinata in base agli arrivi */
+	private ArrayList<Atleta> Podio = new ArrayList<>();
+	/** Istanza del gestore delle operazioni su file. */
+	private GestioneFile filer = new GestioneFile();
+	/** Riferimento alla classe per le anomalie agli atleti */
+	private EventiCausali ec;
+	/** Utilizzato per allineare la stampa della classifica */
+	public int lunghezzaNomePiuLungo = 0;
+	/** Oggetto per la sincronizzazione
+	dell'aggiunta degli atleti al podio */
 	private final Object lock = new Object();
 
-	/**
-	 * Lunghezza totale della gara in metri.
-	 * Valore costante che indica la distanza che un atleta deve
-	 * percorrere per essere considerato "arrivato" e andare nel {@link #Podio}
-	 */
-	final double LUNGHEZZAGARA = 500.0;
+	/** Lunghezza totale della gara in metri. */
+	public final double LUNGHEZZAGARA = 500.0;
 
-	/**
-	 * Costruttore di {@link Giudice}
-	 */
+	/** Costruttore del {@link Giudice} */
 	public Giudice(EventiCausali e) { ec = e; }
 
-	/**
-	 * Getter per la lunghezza della gara (in metri).
-	 *
-	 * @return la lunghezza di gara definita in {@link #LUNGHEZZAGARA}
-	 */
+	/** Getter per la lunghezza della gara (in metri).
+	 * @return {@link #LUNGHEZZAGARA} */
 	public double getLunghezzaGara() { return LUNGHEZZAGARA; }
 
-	/**
-	 * Getter per la lunghezza del nome più lungo registrata finora.
-	 *
-	 * @return numero di caratteri del nome più lungo tra gli atleti
-	 */
+	/** Getter della lunghezza del nome dell'atleta più lungo.
+	 * @return {@link #lunghezzaNomePiuLungo} */
 	public int getLunghezzaNomePiuLungo() { return lunghezzaNomePiuLungo; }
 
 	/**
 	 * Verifica se un dato atleta è presente nel podio.
-	 *
 	 * @param a atleta da verificare
-	 * @return {@code true} se l'atleta è presente in {@link #Podio}, {@code false} altrimenti
-	 */
+	 * @return {@code true} se l'atleta è presente in {@link #Podio}
+	*/
 	public boolean sonoNelPodio(Atleta a) {
 		return (Podio.indexOf(a) > -1) ? true : false;
 	}
 
-	/**
-	 * 
-	 */
+	/** Ordina per progresso e inserisce gli atleti
+	ritirati all'interno del podio per la stampa */
 	private void ritiratiNelPodio() {
 		ArrayList<Atleta> ritirati = new ArrayList<>();
 
@@ -111,14 +71,12 @@ public class Giudice extends Thread {
 		Podio.addAll(ordinati);
 	}
 
-	/**
-	 * Monitora il progresso di tutti gli atleti registrati.
-	 * Chiama per ciascun atleta visualizzaProgresso() e controlla se
-	 * ha raggiunto o superato LUNGHEZZAGARA, in caso, lo aggiunge
-	 * al {@link #Podio} in modo sincronizzato.
-	 * Quando tutti gli atleti sono presenti nel podio invoca {@link #fineGara()}
-	 * e termina la sua esecuzione. Questo metodo è progettato come metodo ricorsivo
-	 * che effettua una pausa di 1s tra esecuzioni
+	/** Monitora il progresso di tutti gli atleti partecipanti.
+	 * Per ogni atleta esegue {@code visualizzaProgresso()}
+	 * Controlla se ha percorso i metri di {@link #LUNGHEZZAGARA}
+	 * Se si, inserisce l'atleta nel podio in modo sincronizzato e
+	 * controlla se tutti gli altri atleti hanno finito
+	 * Se tutti gli atleti hanno finito, esegue {@link #fineGara()}
 	 */
 	public void monitora() {
 		int i = 0;
@@ -135,19 +93,15 @@ public class Giudice extends Thread {
 			else if (i == (Atleti.size() - Podio.size())) { ritiratiNelPodio(); fineGara(); return; }
 		}
 
-		System.out.printf("%s\n", "-".repeat(Atleta.numeroCaratteriRappresentativi + lunghezzaNomePiuLungo + 5 + 7 + 1 + Integer.toString(Atleti.size()).length()));
+		System.out.printf("%s\n", "-".repeat(Atleta.numeroCaratteriRappresentativi + lunghezzaNomePiuLungo + Integer.toString(Atleti.size()).length()) + 13);
 
 		try { Thread.sleep(1000); }
 		catch (InterruptedException e) { System.err.println("Errore sleep"); }
+
 		monitora();
 	}
 
-	/**
-	 * Segna la fine della gara e stampa la classifica finale.
-	 * Metodo sincronizzato: imposta {@link #Podio} uguale a {@link #Atleti},
-	 * stampa la classifica (dal primo all'ultimo) e delega a
-	 * {@link GestioneFile#scriviPodio(ArrayList)} la scrittura su un file
-	 */
+	/** Segna la fine della gara e stampa la classifica finale. */
 	synchronized public void fineGara() {
 		int i = 0;
 
@@ -166,9 +120,11 @@ public class Giudice extends Thread {
 		return;
 	}
 
-	/**
-	 * 
-	 */
+	/** Metodo con eccezione per la registrazione degli atleti alla gara
+	 * Se il file contenente i nomi degli atleti e' vuoto, lancia un {@link Exception}
+	 * Se il file contenente i nomi degli atleti e' unico, lancia un {@link Exception}
+	 * Se il file contenente i nomi degli atleti contine piu' di 999 nomi, lancia un {@link Exception}
+	 * Altrimenti @return {@link ArrayList} */
 	private ArrayList<Atleta> registraAtleti() throws Exception {
 		ArrayList<Atleta> possibiliAtleti = filer.registraAtleti("atleti.txt", this, ec);
 		
@@ -178,12 +134,9 @@ public class Giudice extends Thread {
 		else { return possibiliAtleti; }
 	}
 
-	/**
-	 * Metodo per avviare la gara. Registra gli atleti su file tramite
-	 * {@link GestioneFile#registraAtleti(String, Giudice)}, poi esegue un conto
-	 * alla rovescia e avvia ogni {@link Atleta} come thread separato. Infine
-	 * invoca {@link #monitora()} per iniziare il monitoraggio dei progressi.
-	 */
+	/** Metodo per avviare la gara.
+	 * Conto alla rovescia, poi inizializza un thread per atleta
+	 * Poi esegue il metodo recursivo {@link #monitora()} */
 	public void avviaGara() {
 		try { Atleti = registraAtleti(); }
 		catch(Exception errore) { System.out.println("Errore! " + errore.getMessage()); return; }

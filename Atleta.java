@@ -1,9 +1,7 @@
 import java.util.Random;
 
-/**
- * Rappresenta un atleta che partecipa allauna gara.
- * Implementa {@link Runnable} per permettere l'esecuzione di ciascun {@link Atleta} in thread separati
- */
+/** Rappresenta un atleta che partecipa alla gara.
+ * Implementa {@link Runnable} */
 public class Atleta implements Runnable {
 	/** Priorità del thread */
 	int efficienzaAgonistica;
@@ -11,9 +9,9 @@ public class Atleta implements Runnable {
 	double progresso;
 	/** Tempo trascorso dall'inizio della gara */
 	double tempo;
-	/** */
+	/** Riferimento per eventi casuali */
 	EventiCausali ec;
-	/** */
+	/** Pausa in secondi dell'atleta */
 	int Attesa;
 	/** Nome dell'atleta */
 	String nome;
@@ -21,18 +19,12 @@ public class Atleta implements Runnable {
 	int numero;
 	/** Riferimento al Giudice che monitora la gara */
 	Giudice g;
-	/** Generatore di numeri casuali, utilizzato per determinare la priorita' e i progressi */
+	/** Generatore di numeri casuali */
 	private Random rand;
 	/** Stile */
 	static final int numeroCaratteriRappresentativi = 100;
 
-	/**
-	 * Costruisce un nuovo atleta e lo registra presso il Giudice.
-	 * La priorita' del futuro Thread viene assegnata casualmente tra MIN_PRIORITY e MAX_PRIORITY.
-	 *
-	 * @param pNome Il nome dell'atleta.
-	 * @param pG	Il Giudice che gestisce la gara.
-	 */
+	/** Costruttore */
 	public Atleta(String pNome, Giudice pG, EventiCausali e) {
 		Attesa = 0;
 		rand = new Random();
@@ -50,42 +42,29 @@ public class Atleta implements Runnable {
 		System.out.printf(" Efficienza Agonistica: %d/%d\n", efficienzaAgonistica, Thread.MAX_PRIORITY);
 	}
 
-	/**
-	 * Simula il movimento dell'atleta durante la gara.
-	 * Incrementa il progresso in maniera casuale e aggiorna il tempo trascorso
-	 */
+	/** Simula il movimento dell'atleta durante la gara.
+	Incrementa il progresso in maniera casuale e aggiorna il tempo trascorso */
 	void cammina() {
 		Random generatore = new Random();
 		progresso += generatore.nextDouble(10 + efficienzaAgonistica * 2);
 		tempo++;
 	}
 
-	/**
-	 * Visualizza lo stato corrente dell'atleta in gara.
-	 * Mostra una barra di progresso proporzionale alla distanza percorsa
-	 */
+	/** Visualizza il progresso dell'atleta nella gara. */
 	void visualizzaProgresso() {
 		double rapportoProgresso = Math.min((progresso / g.getLunghezzaGara() * numeroCaratteriRappresentativi), numeroCaratteriRappresentativi);
 		String spaziatura = " ".repeat(g.getLunghezzaNomePiuLungo() - nome.length());
 		String strProgresso = "=".repeat((int)(rapportoProgresso));
 		String strRimasto = " ".repeat((int)(numeroCaratteriRappresentativi - rapportoProgresso));
 
-		if (progresso >= g.getLunghezzaGara()) {
-			System.out.printf("FINITO [%d] %s%s [%s%s]\n", numero, nome, spaziatura, strProgresso, strRimasto);
-		} else if (Attesa > 0) {
-			System.out.printf("ATT. %d [%d] %s%s [%s%s ]\n", Attesa, numero, nome, spaziatura, strProgresso, strRimasto);
-		} else if (Attesa == -1){
-			System.out.printf("RITIRO [%d] %s%s [%s%s ]\n", numero, nome, spaziatura, strProgresso, strRimasto);
-		} else {
-			System.out.printf("       [%d] %s%s [%s%s ]\n", numero, nome, spaziatura, strProgresso, strRimasto);
-		}
+		if (progresso >= g.getLunghezzaGara())	{ System.out.printf("FINITO [%d] %s%s [%s%s]\n", numero, nome, spaziatura, strProgresso, strRimasto); }
+		else if (Attesa > 0)			{ System.out.printf("ATT. %d [%d] %s%s [%s%s ]\n", Attesa, numero, nome, spaziatura, strProgresso, strRimasto); }
+		else if (Attesa == -1)			{ System.out.printf("RITIRO [%d] %s%s [%s%s ]\n", numero, nome, spaziatura, strProgresso, strRimasto); }
+		else					{ System.out.printf("       [%d] %s%s [%s%s ]\n", numero, nome, spaziatura, strProgresso, strRimasto); }
 	}
 
-	/**
-	 * Funzione principale del thread dell'atleta.
-	 * Imposta la priorità del thread, una volta eseguito, l'atleta cammina finché non raggiunge il podio della gara.
-	 * La progressione avviene con pause di 1 secondo per simulare il tempo reale
-	 */
+	/** Funzione principale del thread dell'atleta.
+	La progressione avviene con pause di 1 secondo per simulare il tempo reale */
 	@Override
 	public void run() {
 		Thread.currentThread().setPriority(efficienzaAgonistica);
